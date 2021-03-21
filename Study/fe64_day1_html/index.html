@@ -9,8 +9,9 @@
         a:visited {
             color: blue;
         }
-        td{
-            border:1px solid;
+
+        td {
+            border: 1px solid;
             padding: 5px;
         }
     </style>
@@ -71,42 +72,46 @@
             <li>Blue Tea</li>
         </ol>
         <img src="images\greentea.jpg" alt="Green Tea">
-        <table style="width: 600px; border: 1px black; border-style: ridge;">
-            <tr>
-                <th colspan="2" style="background-color: red;">Name</th>
-                <th style="background-color: blue;">Type</th>
-                <th style="background-color: green;">Price</th>
-            </tr>
-            <tr>
-                <td rowspan="4">Traditional Coffee</td>
-                <td rowspan="2">Vietnamese coffee pin</td>
-                <td>Hot</td>
-                <td>60.000</td>
-            </tr>
+        <table border="1" cellspacing="0" width="500px">
+            <thead>
+                <tr>
+                    <th colspan="2" style="background-color: red;">Name</th>
+                    <th style="background-color: blue;">Type</th>
+                    <th style="background-color: green;">Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="4">Traditional Coffee</td>
+                    <td rowspan="2">Vietnamese coffee pin</td>
+                    <td>Hot</td>
+                    <td>60.000</td>
+                </tr>
                 <td>Cold</td>
                 <td>28.000</td>
-            <tr>
-                <td rowspan="2">milk coffee</td>
-                <td>Hot</td>
-                <td>38.000</td>
-            </tr>
-            <tr>
-                <td>Cold</td>
-                <td>54.000</td>
-            </tr>
-            <tr>
-                <td rowspan="3">Expresso</td>
-                <td>Amecian coffee</td>
-                <td rowspan="3">Hot</td>
-                <td>110.000</td>
-            </tr>
-            <tr>
-                <td>Machiato</td>
-                <td rowspan="2">40.000</td>
-            </tr>
-            <tr>
-                <td>Cappuchino</td>
-            </tr>
+                <tr>
+                    <td rowspan="2">milk coffee</td>
+                    <td>Hot</td>
+                    <td>38.000</td>
+                </tr>
+                <tr>
+                    <td>Cold</td>
+                    <td>54.000</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Expresso</td>
+                    <td>Amecian coffee</td>
+                    <td rowspan="3">Hot</td>
+                    <td>110.000</td>
+                </tr>
+                <tr>
+                    <td>Machiato</td>
+                    <td rowspan="2">40.000</td>
+                </tr>
+                <tr>
+                    <td>Cappuchino</td>
+                </tr>
+            </tbody>
         </table>
     </div>
 </body>
