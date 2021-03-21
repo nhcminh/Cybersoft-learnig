@@ -1,0 +1,50 @@
+#web_header img {
+  width: 200px;
+}
+#web_nav-bar {
+  background-color: black;
+  color: white;
+}
+#web_nav-bar ul li {
+  text-transform: uppercase;
+  padding: 15px 15px 15px 0;
+  display: inline-block;
+  margin-right: 30px;
+  /* list-style: none; */
+}
+a,
+a:visited,
+a:default {
+  color: white;
+  text-decoration: none;
+}
+#web_carousel img {
+  width: 100%;
+}
+#web_intro p span {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: red;
+}
+
+.web_product_left,
+.web_product_right {
+  width: 50%;
+  float: left;
+}
+#web_product div .web_product_full-img,
+img {
+  width: 100%;
+  display: block;
+}
+.web_product_half-img {
+  width: 50%;
+  float: left;
+}
+div.web_product_left,
+div.web_product_right div {
+  /* padding: 10px; */
+}
+.clear {
+  clear: both;
+}
