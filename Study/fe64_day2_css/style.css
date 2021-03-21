@@ -1,0 +1,24 @@
+#title1 {
+  /* background-color: red;
+            color: white;
+            text-align: center;
+            font-size: 40px; */
+  font-style: italic;
+}
+#title2 {
+  /* background-color: red;
+            color: white;
+            text-align: center;
+            font-size: 40px; */
+  font-weight: 900;
+}
+.heading {
+  background-color: blue;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+
+div#content .pDes {
+  color: green;
+}
