@@ -18,8 +18,10 @@ a:default {
   color: white;
   text-decoration: none;
 }
+
 #web_carousel img {
   width: 100%;
+  
 }
 #web_intro p span {
   text-transform: uppercase;
@@ -32,19 +34,85 @@ a:default {
   width: 50%;
   float: left;
 }
-#web_product div .web_product_full-img,
-img {
-  width: 100%;
-  display: block;
+.web_product_item{
+  float: left;
+  padding: 5px;
 }
-.web_product_half-img {
-  width: 50%;
+.web_product_item1{
+  width: 48%;
   float: left;
 }
-div.web_product_left,
-div.web_product_right div {
-  /* padding: 10px; */
+
+.web_product_item2{
+  width: 98%
+}
+.web_product_item img{
+  display: block;
+  width: 100%;
 }
 .clear {
   clear: both;
+}
+.web_best-seller_product_item{
+  display: inline-block;
+  width: 24%;
+  margin: 5px;
+}
+.web_best-seller_product_item img{
+  width: 100%;
+}
+.web_best-seller_product_item button{
+  background-color: #d71d24;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+}
+#web_best-seller h1{
+  text-align: center;
+  text-transform: uppercase;
+}
+#web_sale{
+  background-image: url('../image/nature.jpg');
+  background-size: cover;
+  height: 400px;
+  position: relative;
+}
+.web_sale_info{
+  border-radius: 50%;
+  background-color: rgba(255, 0, 0, 0.6);
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 15%;
+  top: 10%;
+  text-align: center;
+  color: white;
+}
+.web_sale_info h2 {
+  margin-top: 70px;
+  text-transform: uppercase;
+}
+.web_sale_info p:nth-child(2){
+  font-size: 50px;
+  margin: 10px 0;
+  font-weight: 700;
+}
+
+#web_service{
+  padding: 50px;
+}
+.web_service_item {
+  display: inline-block;
+  width: 15%;
+  text-align: center;
+}
+.web_service_item-1{
+margin-left: calc(32vw - (100vw*7.5/100));
+}
+#web_footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 200px 20px 200px;
 }
