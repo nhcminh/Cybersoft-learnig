@@ -1,0 +1,111 @@
+body {
+  margin: auto;
+  font: 1em sans-serif;
+
+}
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+p {
+  font-size: 13px;
+  color: grey;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header img:last-child{
+    margin-right: 100px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 1px;
+  border-bottom: 1px;
+  border-right: 0;
+  border-left: 0;
+  border-color: gray;
+  border-style: solid;
+  padding: 0px;
+}
+nav li {
+  list-style: none;
+  text-transform: uppercase;
+  padding: 5px;
+  font-weight: 550;
+}
+
+nav li a:link,
+nav li a:visited {
+  color: grey;
+  text-decoration: none;
+}
+nav li a:hover {
+  text-decoration: underline;
+}
+
+#intro,
+#course,
+#news {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+#intro img,
+#course > img,
+#news > img {
+  width: 500px;
+  margin: auto;
+}
+
+.course_detail {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  justify-content: center;
+}
+.course_detail div {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.course_detail h3 {
+  color: brown;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.news_banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.news_left,
+.news_middle,
+.news_right {
+  display: flex;
+  flex-direction: column;
+}
+.news_left{
+    flex-grow: 0.43;
+}
+.news_middle, .news_right{
+    flex-grow: 0.2;
+}
+.news_banner div div {
+  position: relative;
+  margin: 5px;
+  border-bottom: 2px solid brown;
+}
+.news_banner div div p {
+  position: absolute;
+  bottom: 0%;
+  text-align: left;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.56);
+  padding: 10px;
+}
+.news_banner div div img{
+    width: 100%;
+}
