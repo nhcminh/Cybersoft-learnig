@@ -1,6 +1,14 @@
 body {
   margin: 0;
 }
+h1 {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 3em;
+  line-height: 0;
+}
+
+/* start header navigation */
 nav ul {
   display: flex;
   justify-content: flex-end;
@@ -12,12 +20,14 @@ nav ul {
   font-size: 17px;
 }
 nav ul li {
-  /* margin-left: 20px; */
   margin-right: 30px;
 }
 nav > ul > li:first-child {
   color: red;
 }
+/* end header navigation */
+
+/* start header */
 header {
   position: relative;
   display: flex;
@@ -27,7 +37,7 @@ header img {
   width: 100%;
 }
 #logo,
-#hero {
+#header_hero-content {
   position: absolute;
 }
 #logo {
@@ -48,27 +58,28 @@ header img {
   font-size: 0.8rem;
   padding-left: 1rem;
 }
-#hero {
+
+#header_hero-content {
   top: 25%;
   right: 5%;
   text-align: right;
   color: rgb(47, 47, 47);
 }
-#hero h1,
-#hero p {
+#header_hero-content h1,
+#header_hero-content p {
   background-color: rgba(210, 210, 210, 0.33);
   display: inline;
 }
-#hero h1 {
+#header_hero-content h1 {
   font-size: 3.6rem;
   font-weight: 500;
   line-height: 2;
 }
-#hero p {
+#header_hero-content p {
   line-height: 2rem;
   letter-spacing: 6px;
 }
-#intro {
+#header_intro {
   padding-left: 100px;
   padding-right: 100px;
   background-color: rgb(76, 206, 230);
@@ -76,15 +87,19 @@ header img {
   flex-direction: column;
   padding-bottom: 20px;
 }
-#intro h2 {
+#header_intro h2 {
   color: rgb(47, 47, 47);
   background-color: rgba(210, 210, 210, 0.33);
   width: max-content;
   -webkit-margin-after: 0;
 }
-#intro p {
+#header_intro p {
   color: grey;
 }
+
+/* end header */
+
+/* start welcome */
 #welcome {
   display: flex;
   flex-direction: column;
@@ -95,12 +110,7 @@ header img {
 #welcome > p {
   max-width: 500px;
 }
-#welcome > h2 {
-  text-transform: capitalize;
-  font-weight: 500;
-  font-size: 3em;
-  line-height: 0;
-}
+
 #welcome_content {
   display: flex;
   flex-direction: row;
@@ -126,6 +136,10 @@ header img {
   flex-direction: row;
   text-align: left;
 }
+
+/* end welcome */
+
+/* start ourwork */
 #ourwork {
   padding-left: 30px;
   padding-right: 30px;
@@ -143,6 +157,9 @@ header img {
 #ourwork img {
   width: 33%;
 }
+/* end ourwork */
+
+/* start succes */
 #sc-with-us,
 #sc-with-us_content {
   display: flex;
@@ -187,3 +204,83 @@ header img {
   margin-right: 1em;
   font-size: 1.5em;
 }
+#sc-with-us_content_left div li {
+  list-style: none;
+}
+#sc-with-us_content_left div li::before {
+  content: "\203A";
+  color: rgb(100, 195, 226);
+  display: inline-block;
+  width: 1em;
+  font-size: 1.5em;
+}
+/* end success */
+
+/* start footer */
+footer {
+  padding: 2rem;
+  background-color: #222222;
+  color: white;
+}
+footer p {
+  color: grey;
+}
+footer ul {
+  color: grey;
+  list-style: none;
+  padding: 0;
+  line-height: 2em;
+}
+#footer_container {
+  display: flex;
+  flex-direction: row;
+}
+#footer_container_left,
+#footer_container_right {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-around;
+}
+#footer_container_left div,
+#footer_container_right div {
+  display: flex;
+  flex-direction: column;
+  flex: 0.3;
+}
+div#footer_container_right div:first-child {
+  flex: 0.5;
+}
+div#footer_container_right div:last-child {
+  flex: 0.4;
+  justify-content: center;
+}
+div#footer_container_right div#footer_logo h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+div#footer_container_right div#footer_logo p {
+  font-size: 0.9rem;
+}
+div#footer_container_right div#footer_logo a:link,
+div#footer_container_right div#footer_logo a:visited {
+  color: red;
+}
+div#footer_container_right div#footer_logo * {
+  margin: 0.3rem;
+}
+form {
+  display: flex;
+}
+form button {
+  color: white;
+  background-color: tomato;
+  border: 0;
+  margin: 0;
+}
+form input {
+  width: 80%;
+  padding: 5px;
+  margin: 0;
+}
+/* end footer */
