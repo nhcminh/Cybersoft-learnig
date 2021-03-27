@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 #web_header img {
   width: 200px;
 }
@@ -39,12 +42,12 @@ a:default {
   padding: 5px;
 }
 .web_product_item1{
-  width: 48%;
+  width: 50%;
   float: left;
 }
 
 .web_product_item2{
-  width: 98%
+  width: 100%
 }
 .web_product_item img{
   display: block;
@@ -54,9 +57,9 @@ a:default {
   clear: both;
 }
 .web_best-seller_product_item{
-  display: inline-block;
-  width: 24%;
-  margin: 5px;
+  float: left;
+  width: 25%;
+  padding: 5px;
 }
 .web_best-seller_product_item img{
   width: 100%;

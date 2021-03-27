@@ -32,11 +32,13 @@ body {
     font-size: 2rem;
     text-transform: uppercase;
     margin: 0;
+    font-weight: 600;
 }
 .header_logo p span {
     font-size: 1rem;
     color: #85de85;
     margin-right: 10px;
+    font-weight: 500;
 }
 .header_info {
     flex: 0.7;
@@ -50,7 +52,7 @@ body {
     color: grey;
 }
 .header_info_contact div {
-    flex: 0.5;
+    flex: 0.4;
     justify-content: space-around;
 }
 nav {
@@ -69,6 +71,9 @@ nav {
     flex: 1;
     justify-content: space-around;
     text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-left: 5px;
 }
 .nav_container_social {
     flex-basis: 10%;
@@ -82,11 +87,46 @@ nav {
     color: #222222;
 }
 .slider {
-    width: 100vw;
+    width: 100%;
     height: 80vh;
     background-image: url('../image/1.jpg');
     background-size: cover;
     align-items: center;
     justify-content: center;
     flex: 0.4;
+}
+.slider_container {
+    align-items: center;
+    padding: 100px 200px 100px 200px;
+    text-align: center;
+    color: white;
+    line-height: 2em;
+    position: relative;
+}
+.slider_container span:first-child {
+    font-size: 2rem;
+}
+.slider_container h1 {
+    font-size: 4rem;
+    text-transform: capitalize;
+    line-height: 2;
+}
+.button {
+    border: 0;
+    padding: 10px 20px 10px 20px;
+    background-color: limegreen;
+    margin-top: 20px;
+    color: white;
+    text-transform: capitalize;
+}
+.slider_container span:last-child {
+    position: absolute;
+    bottom: 5%;
+}
+.slider_container span:last-child i {
+    margin: 5px;
+    font-size: 0.8rem;
+}
+.slider_container span:last-child i:first-child {
+    color: limegreen
 }
