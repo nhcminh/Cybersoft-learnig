@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+.header{
+    display: flex;
+    background-color: #4e2a94;
+    color: white;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 0px;
+}
+.header__brand, .navbar__menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+    transition: all 0.5s;
+}
+.navbar__menu li {
+    display: inline;
+    list-style: none;
+    margin: 0 10px;
+}
+.navbar__menu li a {
+    font-size: 1.2rem;
+}
+.navbar__menu li.active a{
+    color: tomato;
+}
+.navbar__menu li:hover a {
+    color: tomato;
+}
+.carousel {
+    width: 100%;
+    height: 50rem;
+    background-image: url('../images/b3.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 5rem;
+    
+}
+.carousel h1 {
+    font-size: 4rem;
+    letter-spacing: 0.4rem;
+    color: white;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.carousel p {
+    color: #e0e0e0;
+    font-size: 1.3rem;
+}
+.carousel .btn {
+    border: solid 1px white;
+    background-color: #ff0e83;
+    color: white;
+    padding: 1rem 2.5rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+.carousel .btn:hover {
+    border-color: #ff0e83;
+    background-color: white;
+    color: black;
+    cursor: crosshair;
+}
