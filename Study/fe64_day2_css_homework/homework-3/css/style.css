@@ -1,92 +1,39 @@
 *{
     margin: 0;
-}
-body {
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.row-flex {
+a:link{
+    text-decoration: none;
+}
+header {
     display: flex;
-    flex-direction: row;
- 
+    justify-content: space-around;
 }
-.col-flex{
+header > div:last-child {
+    width: 80%;
+}
+header > div > a {
+    font-size: 3rem;
+}
+.information {
     display: flex;
-    flex-direction: column;
-
-}
-.inline-flex{
-    display: inline-flex;
-
-}
-.header_container {
-    flex:1;
-    height: 60px;
-}
-.header_logo {
-    flex:0.3;
-    align-items: center;
-    justify-content: center;
-    align-self: flex-end;
-}
-.header_logo p {
-    font-size: 2rem;
-    text-transform: uppercase;
-    margin: 0;
-}
-.header_logo p span {
-    font-size: 1rem;
-    color: #85de85;
-    margin-right: 10px;
-}
-.header_info {
-    flex: 0.7;
-    align-self: center;
-}
-.header_info_contact {
     justify-content: flex-end;
 }
-.header_info_contact div span {
-    font-size: 0.8rem;
-    color: grey;
-}
-.header_info_contact div {
-    flex: 0.5;
-    justify-content: space-around;
+.information__details, .information__details ul li {
+    display: inline-block;
+    margin: 0 1rem;
 }
 nav {
-    margin: 5px 0 5px 0;
-}
-.nav_container {
-    flex: 1;
+    display: flex;
     justify-content: flex-end;
 }
-.nav_container_menu {
-    flex-basis: 40%;
-    justify-content: flex-end;
+nav div {
+    margin: 0 5rem;
 }
-.nav_container_menu  ul {
-    list-style: none;
-    flex: 1;
-    justify-content: space-around;
-    text-transform: capitalize;
-}
-.nav_container_social {
-    flex-basis: 10%;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: 50px;
-    margin-right: 50px;
-    font-size: 0.9em;
-}
-.nav_container_social a:link, a:visited {
-    color: #222222;
-}
-.slider {
-    width: 100vw;
-    height: 80vh;
-    background-image: url('../image/1.jpg');
-    background-size: cover;
-    align-items: center;
-    justify-content: center;
-    flex: 0.4;
+nav div div, nav div div ul li {
+    display: inline-block;
+    margin: 0 1rem;
 }
