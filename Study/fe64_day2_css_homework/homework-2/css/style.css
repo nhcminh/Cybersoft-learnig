@@ -119,7 +119,6 @@ header img {
 #welcome_content_right {
   display: flex;
   flex-direction: column;
-  flex: 50%;
 }
 #welcome_content img {
   width: 100%;
