@@ -6,8 +6,9 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 body {
-  width: 1440px;
+  /* width: 1440px; */
   margin: auto;
+  background: white;
 }
 a:link {
   text-decoration: none;
@@ -32,7 +33,7 @@ header > div > a:visited {
   color: black;
 }
 header > div > a > span {
-  color: rgb(68, 184, 33);
+  color: #82b62d;
   font-size: 1.5rem;
   margin-right: 0.5rem;
 }
@@ -79,10 +80,38 @@ nav {
 }
 .owl-dots {
   position: absolute;
-  bottom: 25%;
+  bottom: 20%;
   left: 50%;
+  transform: translate(-50%, -50%);
 }
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-    background: rgb(68, 184, 33) !important;
+  background: #82b62d !important;
+}
+.carousel__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+.carousel__content h4 {
+  font-size: 2rem;
+  line-height: 2;
+}
+.carousel__content h1 {
+  font-size: 5rem;
+  text-transform: capitalize;
+}
+.carousel__content p {
+  line-height: 2;
+}
+.btn {
+  color:white;
+  text-transform: capitalize;
+  background: #82b62d;
+  border: none;
+  border-radius: 0;
+  padding: 0.5rem 1.5rem;
 }
