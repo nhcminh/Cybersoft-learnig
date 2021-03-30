@@ -1,59 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/fa-5.15.3/css/all.css" />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <title>Travel</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <div>
-        <a href=""><span>njoy</span>travels</a>
-      </div>
-      <div>
-        <div class="information">
-          <div class="information__details">
-            <i class="fas fa-phone-alt"></i><a href="tel:+1234567">: 123456</a>
-          </div>
-          <div class="information__details">
-            <i class="fas fa-envelope"></i
-            ><a href="mailto:nhcminh47@gmail.com">: nhcminh47@gmail.com</a>
-          </div>
+        <div>
+            <a href=""><span>njoy</span>travels</a>
         </div>
-      </div>
+        <div>
+            <div class="information">
+                <div class="information__details">
+                    <i class="fas fa-phone-alt"></i><a href="tel:+1234567">: 123456</a>
+                </div>
+                <div class="information__details">
+                    <i class="fas fa-envelope"></i><a href="mailto:nhcminh47@gmail.com">: nhcminh47@gmail.com</a>
+                </div>
+            </div>
+        </div>
     </header>
     <nav>
         <div class="navbar">
             <div class="navbar__item">
                 <ul>
-                  <li><a href="">home</a></li>
-                  <li><a href="">about</a></li>
-                  <li><a href="">pages</a></li>
-                  <li><a href="">code</a></li>
-                  <li><a href="">gallery</a></li>
-                  <li><a href="">contact</a></li>
+                    <li><a href="">home</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">pages</a></li>
+                    <li><a href="">code</a></li>
+                    <li><a href="">gallery</a></li>
+                    <li><a href="">contact</a></li>
                 </ul>
             </div>
             <div class="navbar__social">
-              <ul>
-                <li>
-                  <a href=""><i class="fab fa-google-plus-g"></i></a>
-                </li>
-                <li>
-                  <a href=""><i class="fab fa-linkedin-in"></i></a>
-                </li>
-                <li>
-                  <a href=""><i class="fab fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href=""><i class="fab fa-facebook-f"></i></a>
-                </li>
-              </ul>
+                <ul>
+                    <li>
+                        <a href=""><i class="fab fa-google-plus-g"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                </ul>
             </div>
-          </div>
+        </div>
     </nav>
-  </body>
+    <section id="carousel">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="./image/1.jpg" alt="">
+                <div class="carousel__content">
+                    abc
+                </div>
+            </div>
+            <div class="item">
+                <img src="./image/1.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel();
+        });
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+    </script>
+</body>
+
 </html>
