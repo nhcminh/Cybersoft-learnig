@@ -4,8 +4,7 @@
 .DS_Store
 .AppleDouble
 .LSOverride
-*/*/.DS_Store
-*/*/*/.DS_Store
+Study/**/*/.DS_Store
 */*/*.zip
 # Icon must end with two \r
 Icon
