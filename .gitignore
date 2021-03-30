@@ -4,11 +4,9 @@
 .DS_Store
 .AppleDouble
 .LSOverride
-Study/fe64_day2_css_homework/.DS_Store
-Study/fe64_day2_css_homework/homework-1/.DS_Store
-Study/fe64_day2_css_homework/homework-3/.DS_Store
-Study/fe64_day2_css_homework/FE64_B\303\200I T\341\272\254P CSS CH\303\215NH (VUS)_NGUYEN HUYNH CONG MINH.zip
-Study/fe64_day2_css_homework/FE64_B\303\200I T\341\272\254P PH\341\273\244 1_ NGUYEN HUYNH CONG MINH.zip
+*/*/.DS_Store
+*/*/*/.DS_Store
+*/*/*.zip
 # Icon must end with two \r
 Icon
 
