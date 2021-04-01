@@ -82,29 +82,12 @@ nav {
   position: absolute;
   bottom: 20%;
   left: 50%;
-<<<<<<< HEAD
-  transform: translate(-50%, -50%);
-=======
   transform: translate(-50%,-50%);
->>>>>>> 1c93177 (hw3)
 }
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
   background: #82b62d !important;
 }
-<<<<<<< HEAD
-.carousel__content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-}
-.carousel__content h4 {
-  font-size: 2rem;
-  line-height: 2;
-=======
 .item {
   height: 80vh;
   background-image: url('../image/1.jpg');
@@ -125,24 +108,10 @@ nav {
   font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
->>>>>>> 1c93177 (hw3)
 }
 .carousel__content h1 {
   font-size: 5rem;
   text-transform: capitalize;
-<<<<<<< HEAD
-}
-.carousel__content p {
-  line-height: 2;
-}
-.btn {
-  color:white;
-  text-transform: capitalize;
-  background: #82b62d;
-  border: none;
-  border-radius: 0;
-  padding: 0.5rem 1.5rem;
-=======
   line-height: 2;
 }
 .carousel__content p {
@@ -155,5 +124,4 @@ nav {
   color: white;
   background: rgb(68, 184, 33);
   text-transform: capitalize;
->>>>>>> 1c93177 (hw3)
 }
