@@ -6,7 +6,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 body {
-  /* width: 1440px; */
+  max-width: 1440px;
   margin: auto;
   background: white;
 }
@@ -72,17 +72,22 @@ nav {
   font-size: 1.5rem;
   text-transform: capitalize;
 }
+.active {
+  color: red  !important;
+}
 .navbar__item ul li a:link,
 .navbar__social ul li a:link,
 .navbar__item ul li a:visited,
-.navbar__social ul li a:visited {
+.navbar__social ul li a:visited,
+footer .footer__list div.navbar__footer ul li a:link,
+footer .footer__list div.navbar__footer ul li a:visited {
   color: black;
 }
 .owl-dots {
   position: absolute;
   bottom: 20%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
@@ -90,16 +95,16 @@ nav {
 }
 .item {
   height: 80vh;
-  background-image: url('../image/1.jpg');
+  background-image: url("../image/1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.carousel__content{
+.carousel__content {
   position: absolute;
   top: 40%;
-  left:50%;
-  transform: translate(-50%,-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
   color: white;
   width: 30%;
@@ -119,9 +124,189 @@ nav {
   margin-bottom: 5rem;
 }
 .btn {
-  padding: 1rem 2rem;
+  padding: 0.7rem 2rem;
   border: none;
   color: white;
   background: rgb(68, 184, 33);
   text-transform: capitalize;
+}
+#welcome,
+#news {
+  padding: 5% 5%;
+}
+#welcome h1,
+#service h1,
+#news h1,
+#cta h1 {
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+.welcome__content,
+.welcome__content__item,
+.news__content,
+.news__content__item {
+  display: flex;
+  padding: 1rem;
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+.flex-60 {
+  flex-basis: 60%;
+}
+.flex-40 {
+  flex-basis: 40%;
+}
+.img-1 {
+  background-image: url("../image/2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.img-2 {
+  background-image: url("../image/3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.img-3 {
+  background-image: url("../image/4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.welcome__content__item h2 {
+  line-height: 3;
+  font-size: 1.5rem;
+}
+.welcome__content__item p {
+  margin: 1.5rem 0;
+  color: grey;
+}
+.welcome__content__item .btn {
+  margin: 3rem 0;
+}
+.welcome__content__item > img {
+  max-width: 100%;
+}
+#service {
+  padding: 3rem;
+  background-color: rgba(237, 250, 253, 0.68);
+}
+.service__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 2rem 2rem;
+}
+.service__item {
+  text-align: center;
+  margin: 2rem;
+}
+.service__item i {
+  font-size: 2.5rem;
+  background: white;
+  padding: 0.5rem;
+  color: rgb(68, 184, 33);
+}
+.service__item h2 {
+  line-height: 3;
+  text-transform: capitalize;
+}
+.service__item p {
+  color: grey;
+}
+.news__content__item h2 {
+  margin: 2rem;
+  max-width: 50%;
+  text-transform: capitalize;
+  font-size: 3rem;
+}
+.news__content__item p span {
+  margin-right: 4rem;
+  font-size: 1.5rem;
+}
+.news__content__item p span i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+#cta {
+  padding: 3rem 5rem;
+  text-align: center;
+  background-image: url("../image/5.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#cta form input {
+  padding: 1rem 0;
+  width: 400px;
+}
+#cta form .btn {
+  padding: 1.1rem;
+}
+#cta h1 {
+  color: white;
+  line-height: 4;
+}
+footer {
+  padding: 5rem 2rem 0;
+  background-color: rgba(237, 250, 253, 0.68);
+}
+footer .footer__list {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+footer .footer__list .item-1 {
+  grid-column: 1 / span 3;
+}
+footer .footer__list .item-2 {
+  grid-column: 4 / span 3;
+}
+
+footer .footer__list div.navbar__footer ul li {
+  list-style: none;
+}
+footer .footer__list div.navbar__footer ul li a {
+  font-size: 1.2rem;
+}
+.footer__item {
+  margin: 1rem;
+}
+.footer__item h2 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  line-height: 2;
+}
+.footer__item p {
+  color: grey;
+  margin: 1rem 0;
+}
+.footer__item p i {
+  margin-right: 1rem;
+}
+.footer__item p span {
+  color: black;
+  font-weight: 600;
+}
+.navbar__footer {
+  line-height: 2;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.copyright {
+  background: black;
+color: white;
+height: 60px;
+display: flex;
+justify-content: center;
+align-content: center;
+}
+.copyright p {
+  align-self: center;
+  font-size: 1.5rem;
+}
+.copyright p a:link {
+  font-size: 1.5rem;
+  color: rgb(68, 184, 33);
+}
+.copyright p a:visited {
+  color: rgb(68, 184, 33);
 }
