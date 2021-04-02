@@ -109,7 +109,7 @@ header {
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  color: white;
+  color: #c1c1c1;
   padding: 0 4rem;
   line-height: 2.5rem;
 }
@@ -117,9 +117,13 @@ header {
   font-size: 2rem;
   text-transform: capitalize;
   line-height: 5.5rem;
+  color: white;
 }
 .blue {
   background-color: #4e2a84;
+}
+.blue-dark {
+  background-color:#836eaa ;
 }
 .blue p,
 .pink p {
@@ -127,7 +131,10 @@ header {
   letter-spacing: 0.2rem;
 }
 .pink {
-  background-color: #e45982;
+  background-color: #ff0e83;
+}
+.pink-dark {
+  background-color: #ed6498;
 }
 
 .span12 {
@@ -211,7 +218,7 @@ header {
 .gallery__content {
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  gap: 1rem;
+  gap: 2rem;
 }
 .gallery__content__item {
   display: flex;
@@ -221,8 +228,50 @@ header {
 .gallery__content__item img {
   width: 100%;
 }
-.gallery__contwnt__item__text {
+.gallery__content__item__text {
   position: absolute;
   top: 0;
   right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+  width: 100%;
+  height: 100%;
+  padding: 4rem 2rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.144);
+}
+.onhover {
+  transform: translate(0px, 50px);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s;
+}
+.gallery__content__item__text:hover .onhover {
+  transform: translate(0px,0px);
+  visibility: visible;
+  opacity: 1;
+}
+
+.gallery__content__item__text div h1{
+  font-size: 3rem;
+  text-transform: uppercase;
+  line-height: 2;
+  transform: translate(0px, 30px);
+  transition: all 0.4s;
+}
+.gallery__content__item__text div h1 span {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 200;
+}
+.gallery__content__item__text:hover div h1 {
+  transform: translate(0px,0px);
+}
+.gallery__content__item__text p {
+  text-transform: uppercase;
+}
+hr {
+  border: 2px solid white;
 }
