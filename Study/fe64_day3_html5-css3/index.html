@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <link rel="stylesheet" href="./css/style.css" />
+
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -13,24 +13,33 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css"
     integrity="sha512-3icgkoIO5qm2D4bGSUkPqeQ96LS8+ukJC7Eqhl1H5B2OJMEnFqLmNDxXVmtV/eq5M65tTDkUYS/Q0P4gvZv+yA=="
     crossorigin="anonymous" />
-  <link rel="stylesheet" href="./css/lightbox.min.css">
+  <link rel="stylesheet" href="./css/lightbox.min.css" />
+  <link rel="stylesheet" href="./css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
   <header>
     <!-- brand -->
-    <a href="#" class="header__brand">Bake</a>
+    <div>
+      <a href="#" class="header__brand animate__animated animate__zoomInDown">Bake</a>
+      <nav class="navbar">
+        <ul>
+          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#clients">Clients</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
 
-    <nav class="navbar">
-      <ul>
-        <li class="active"><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#service">Service</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#clients">Clients</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
   <section id="carousel">
@@ -126,6 +135,7 @@
       <p>Expert Worker</p>
     </div>
   </section>
+
   <section id="services">
     <h1>our services</h1>
     <div class="services__item">
@@ -163,74 +173,280 @@
       </div>
     </div>
   </section>
+
   <section id="gallery">
     <h1>our gallery</h1>
     <div class="gallery__content">
       <div class="gallery__content__item span12">
         <a href="./images/g1.jpg" data-lightbox="gallery">
-          <img src="./images/g1.jpg" alt="">
+          <img src="./images/g1.jpg" alt="" />
           <div class="gallery__content__item__text">
             <div>
               <h1><span>our</span>gallery</h1>
-              <hr class="onhover">
+              <hr class="onhover" />
             </div>
-            <p class="onhover">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p class="onhover">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
           </div>
         </a>
       </div>
       <div class="gallery__content__item">
-        <img src="./images/g2.jpg" alt="">
-        <div class="gallery__content__item__text">
-          <div>
-            <h1><span>our</span>gallery</h1>
-            <hr class="onhover">
+        <img src="./images/g2.jpg" alt="" />
+        <a href="./images/g2.jpg" data-lightbox="gallery">
+          <div class="gallery__content__item__text">
+            <div>
+              <h1><span>our</span>gallery</h1>
+              <hr class="onhover" />
+            </div>
+            <p class="onhover">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
           </div>
-          <p class="onhover">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        </div>
+        </a>
       </div>
       <div class="gallery__content__item">
-        <img src="./images/g3.jpg" alt="">
-        <div class="gallery__content__item__text">
-          <div>
-            <h1><span>our</span>gallery</h1>
-            <hr class="onhover">
+        <img src="./images/g3.jpg" alt="" />
+        <a href="./images/g3.jpg" data-lightbox="gallery">
+          <div class="gallery__content__item__text">
+            <div>
+              <h1><span>our</span>gallery</h1>
+              <hr class="onhover" />
+            </div>
+            <p class="onhover">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
           </div>
-          <p class="onhover">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        </div>
+        </a>
       </div>
       <div class="gallery__content__item">
-        <img src="./images/g4.jpg" alt="">
-        <div class="gallery__content__item__text">
-          <div>
-            <h1><span>our</span>gallery</h1>
-            <hr class="onhover">
+        <img src="./images/g4.jpg" alt="" />
+        <a href="./images/g4.jpg" data-lightbox="gallery">
+          <div class="gallery__content__item__text">
+            <div>
+              <h1><span>our</span>gallery</h1>
+              <hr class="onhover" />
+            </div>
+            <p class="onhover">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
           </div>
-          <p class="onhover">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        </div>
+        </a>
       </div>
       <div class="gallery__content__item">
-        <img src="./images/g5.jpg" alt="">
-        <div class="gallery__content__item__text">
-          <div>
-            <h1><span>our</span>gallery</h1>
-            <hr class="onhover">
+        <img src="./images/g5.jpg" alt="" />
+        <a href="./images/g5.jpg" data-lightbox="gallery">
+          <div class="gallery__content__item__text">
+            <div>
+              <h1><span>our</span>gallery</h1>
+              <hr class="onhover" />
+            </div>
+            <p class="onhover">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
           </div>
-          <p class="onhover">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        </div>
+        </a>
       </div>
       <div class="gallery__content__item span32">
-        <img src="./images/g6.jpg" alt="">
-        <div class="gallery__content__item__text">
-          <div>
-            <h1><span>our</span>gallery</h1>
-            <hr class="onhover">
+        <img src="./images/g6.jpg" alt="" />
+        <a href="./images/g6.jpg" data-lightbox="gallery">
+          <div class="gallery__content__item__text">
+            <div>
+              <h1><span>our</span>gallery</h1>
+              <hr class="onhover" />
+            </div>
+            <p class="onhover">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
           </div>
-          <p class="onhover">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="team">
+    <h1 class="animate__animated animate__bounce wow">bake team</h1>
+    <div class="team__list">
+      <div class="team__person">
+        <img src="./images/t1.jpg" alt="">
+        <div class="team__person__info">
+          <h2>John Simon</h2>
+          <span>-Cake Maker</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>
+            <a href="">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-google-plus-g"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </p>
+        </div>
+        <div class="team__person__tag">
+          <h2>John Simon</h2>
+          <span>-Cake Maker</span>
+        </div>
+      </div>
+      <div class="team__person">
+        <img src="./images/t2.jpg" alt="">
+        <div class="team__person__info">
+          <h2>Max Will</h2>
+          <span>-Coffee Maker</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>
+            <a href="">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-google-plus-g"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </p>
+        </div>
+        <div class="team__person__tag">
+          <h2>Max Will</h2>
+          <span>-Coffee Maker</span>
+        </div>
+      </div>
+      <div class="team__person">
+        <img src="./images/t3.jpg" alt="">
+        <div class="team__person__info">
+          <h2>Rose Murphy</h2>
+          <span>-Staff Manager</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>
+            <a href="">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-google-plus-g"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </p>
+        </div>
+        <div class="team__person__tag">
+          <h2>Rose Murphy</h2>
+          <span>-Staff Manager</span>
+        </div>
+      </div>
+      <div class="team__person">
+        <img src="./images/t4.jpg" alt="">
+        <div class="team__person__info">
+          <h2>Barbara Will</h2>
+          <span>-Cake Maker</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>
+            <a href="">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-google-plus-g"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </p>
+        </div>
+        <div class="team__person__tag">
+          <h2>Barbara Will</h2>
+          <span>-Cake Maker</span>
+        </div>
+      </div>
+      <div class="team__person">
+        <img src="./images/t1.jpg" alt="">
+        <div class="team__person__info">
+          <h2>Derek Bybee</h2>
+          <span>-Coffee Maker</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>
+            <a href="">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-google-plus-g"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </p>
+        </div>
+        <div class="team__person__tag">
+          <h2>Derek Bybee</h2>
+          <span>-Coffee Maker</span>
+        </div>
+      </div>
+      <div class="team__person">
+        <img src="./images/t2.jpg" alt="">
+        <div class="team__person__info">
+          <h2>Lucille Webster</h2>
+          <span>-Staff Manager</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>
+            <a href="">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-google-plus-g"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </p>
+        </div>
+        <div class="team__person__tag">
+          <h2>Lucille Webster</h2>
+          <span>-Staff Manager</span>
         </div>
       </div>
     </div>
-
   </section>
+
+  <section id="testi">
+    <h1>testimonials</h1>
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <div class="item__content">
+          <blockquote>
+            <i class="fas fa-quote-left"></i>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium sit accusantium fuga nisi iusto
+              voluptates culpa distinctio facilis id deserunt veritatis nam</p>
+            <i class="fas fa-quote-right"></i>
+          </blockquote>
+          <h2>allyi</h2>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item__content">
+          <blockquote>
+            <i class="fas fa-quote-left"></i>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium sit accusantium fuga nisi iusto
+              voluptates culpa distinctio facilis id deserunt veritatis nam</p>
+            <i class="fas fa-quote-right"></i>
+          </blockquote>
+          <h2>wilson</h2>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item__content">
+          <blockquote>
+            <i class="fas fa-quote-left"></i>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium sit accusantium fuga nisi iusto
+              voluptates culpa distinctio facilis id deserunt veritatis nam</p>
+            <i class="fas fa-quote-right"></i>
+          </blockquote>
+          <h2>max</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- scipt -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -239,17 +455,41 @@
     crossorigin="anonymous"></script>
   <script src="./js/countupjs/jquery.countup.min.js"></script>
   <script src="./js/lightbox.js"></script>
+  <script src="./js/owl.carousel.min.js"></script>
+  <script src="./js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+    </script>
   <script>
     $(".counter").countUp({
       time: 2000,
       delay: 5,
     });
     lightbox.option({
-      'resizeDuration': 200,
-      'wrapAround': true
+      resizeDuration: 200,
+      wrapAround: true,
+    });
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel();
+    });
+    $('.owl-carousel').owlCarousel({
+      autoplay: true,
+      loop: true,
+      margin: 10,
+      nav: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
     })
   </script>
-
 </body>
 
 </html>

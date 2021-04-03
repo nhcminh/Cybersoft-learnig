@@ -5,15 +5,30 @@
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
 }
-
+a:link,
+a:visited {
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+a:hover {
+  color: #ff0e83;
+}
 header {
   background-color: #4e2a84;
+  padding: 1.5rem 0;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top:0;
+}
+header > div {
+  width: 70%;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 1.5rem 0;
+  margin: 0 auto;
 }
-
 .header__brand {
   color: white;
   text-decoration: none;
@@ -55,6 +70,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 88px;
 }
 
 #carousel .carousel__content {
@@ -123,7 +139,7 @@ header {
   background-color: #4e2a84;
 }
 .blue-dark {
-  background-color:#836eaa ;
+  background-color: #836eaa;
 }
 .blue p,
 .pink p {
@@ -203,13 +219,16 @@ header {
   align-items: center;
   transition: all 0.5s;
 }
-.services__item__content__icon:hover{
+.services__item__content__icon:hover {
   color: #e45982;
 }
 .services__item__content__icon span {
   font-size: 5rem;
 }
-#gallery >h1 {
+#gallery {
+  padding: 0 0 5rem 0;
+}
+#gallery > h1 {
   text-transform: uppercase;
   text-align: center;
   padding: 5rem 0;
@@ -217,7 +236,7 @@ header {
 }
 .gallery__content {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
 }
 .gallery__content__item {
@@ -249,12 +268,12 @@ header {
   transition: all 0.4s;
 }
 .gallery__content__item__text:hover .onhover {
-  transform: translate(0px,0px);
+  transform: translate(0px, 0px);
   visibility: visible;
   opacity: 1;
 }
 
-.gallery__content__item__text div h1{
+.gallery__content__item__text div h1 {
   font-size: 3rem;
   text-transform: uppercase;
   line-height: 2;
@@ -267,7 +286,7 @@ header {
   font-weight: 200;
 }
 .gallery__content__item__text:hover div h1 {
-  transform: translate(0px,0px);
+  transform: translate(0px, 0px);
 }
 .gallery__content__item__text p {
   text-transform: uppercase;
@@ -275,3 +294,123 @@ header {
 hr {
   border: 2px solid white;
 }
+#team {
+  padding: 5rem 10rem;
+  background-color: #4e2a84;
+}
+#team > h1 {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 4rem;
+  line-height: 3;
+}
+.team__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.team__person {
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+.team__person img {width: 100%;}
+.team__person:hover .team__person__info {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.team__person:hover .team__person__tag {
+  opacity: 0;
+}
+.team__person__info {
+  opacity: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 3rem;
+  transition: all 1s;
+  line-height: 2;
+  position: absolute;
+  top: 0;
+}
+.team__person__tag {
+  position: absolute;
+  bottom: 0;
+  background: #ff0e83;
+  width: 100%;
+  padding: 2rem;
+  transition: all 1s;
+}
+.team__person__info h2,
+.team__person__tag h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #ff0e83;
+}
+.team__person__tag h2 {
+  color: white;
+}
+.team__person__info span,
+.team__person__info p,
+.team__person__tag span {
+  font-size: 1.2rem;
+}
+.team__person__info p a i {
+  font-size: 1rem;
+  padding: 1rem;
+  border: solid 1px;
+  margin: 0 0.4rem;
+}
+
+#testi {
+  background-image: url('../images/cc1.jpg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+#testi > h1 {
+  color: white;
+  font-size: 4rem;
+  text-transform: uppercase;
+  line-height: 2;
+}
+.owl-carousel {
+  width: 80%;
+  align-self: center;
+  border: solid 3px #ff0e83;
+  background-color: rgb(255 255 255 / 55%);
+  padding: 2rem;
+}
+
+.owl-carousel .item .item__content {
+  color: #272727;
+}
+.owl-carousel .item .item__content i {
+  color:#1ebeff;
+  font-size: 2rem;
+  margin: 0 1rem;
+}
+.owl-carousel .item .item__content p {
+  display: inline;
+  font-size: 1.5rem;
+  word-spacing: 3px;
+  line-height: 2;
+}
+.owl-carousel .item .item__content h2 {
+  line-height: 3;
+  font-size: 1.2rem;
+  color: white;
+  text-transform: uppercase;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+  background: black;
+}
+.owl-theme .owl-dots .owl-dot span{
+  background: grey;
+}
+
