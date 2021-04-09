@@ -14,6 +14,10 @@ a:visited {
 a:hover {
   color: #ff0e83;
 }
+button:focus {
+  border: none;
+  outline: none;
+}
 header {
   background-color: #4e2a84;
   padding: 1.5rem 0;
@@ -228,7 +232,7 @@ header > div {
 #gallery {
   padding: 0 0 5rem 0;
 }
-#gallery > h1 {
+#gallery > h1, #contact > h1 {
   text-transform: uppercase;
   text-align: center;
   padding: 5rem 0;
@@ -266,6 +270,9 @@ header > div {
   visibility: hidden;
   opacity: 0;
   transition: all 0.4s;
+}
+.gallery__content__item a {
+  width: 100%;
 }
 .gallery__content__item__text:hover .onhover {
   transform: translate(0px, 0px);
@@ -326,6 +333,7 @@ hr {
 .team__person__info {
   opacity: 0;
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -412,5 +420,77 @@ hr {
 }
 .owl-theme .owl-dots .owl-dot span{
   background: grey;
+}
+
+.contact__form{
+  width: 80%;
+  margin: auto;
+}
+.contact__form form {
+  display: flex;
+  flex-direction: column;
+}
+.contact__form form div {
+  display: flex;
+  justify-content: space-between;
+}
+.contact__form form div input {
+  flex-basis: 49%;
+  margin: 0.5rem 0;
+  padding: 1.5rem;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  border: solid 1px rgb(59,59,59);
+  transition: all 0.5s;
+}
+.contact__form form div input:focus, .contact__form form textarea:focus {
+  outline: none;
+  border: solid 1px rgb(59,59,59);
+  box-shadow: 0 0px 2px 2px #1abcfc;
+}
+.contact__form form textarea {
+  height: 300px;
+  margin: 0.5rem 0;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  padding: 1.5rem;
+  transition: all 0.5s;
+}
+.contact__form form button {
+  color: black;
+  background-color: #ff0e83;
+  border-radius: 2px;
+  border: none;
+  padding: 0.8rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  transition: all 0.5s;
+}
+.contact__form form button:hover {
+  background-color: #272727;
+  color: white;
+  cursor: pointer;
+
+}
+.contact__map {
+ padding: 3rem 5rem;
+}
+.contact__info {
+  display: flex;
+  justify-content: space-around;
+}
+.contact__info .col-3{
+  width: calc(90%/3);
+  text-align: center;
+  line-height: 3;
+}
+.contact__info .col-3 i {
+  font-size: 2.5rem;
+  color: #4e2a84;
+}
+.contact__info .col-3 p {
+  font-size: 1.5rem;
+  color: grey;
 }
 
