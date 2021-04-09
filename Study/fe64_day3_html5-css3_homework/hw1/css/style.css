@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+button:focus {
+  outline: none;
+  border: none;
+}
+li {
+  display: inline-block;
+  margin: 0 1rem;
+  text-transform: capitalize;
+}
+nav {
+  align-self: center;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(25, 25, 25, 0.8);
+  opacity: 1;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+header nav ul li a {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  border-bottom: solid 2px white;
+  transition: all 0.5s;
+  padding: 0.5rem 1.5rem;
+}
+header nav ul li a:hover {
+  color: #01cdce;
+  border-bottom: transparent;
+}
+.header__brand {
+  align-self: center;
+  margin: 0 2rem;
+  font-size: 5rem;
+  letter-spacing: 0.3rem;
+}
+.header__brand span {
+  font-size: 5rem;
+  color: #01cdce;
+}
+.owl-carousel {
+  position: relative;
+}
+.owl-carousel .item {
+  max-width: 1600px;
+  min-width: 1200px;
+  min-height: 800px;
+  margin: auto;
+}
+.owl-dots {
+  top: 75%;
+}
+.owl-nav {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  width: 100%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background-color: transparent !important;
+}
+.owl-prev span,
+.owl-next span {
+  font-size: 3rem;
+  color: white;
+}
+.carousel__item__content,
+.owl-dots {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+}
+.owl-dots {
+    top: 75%;
+}
+.carousel__item__content h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  width: max-content;
+  text-align: center;
+}
+.carousel__item__content p {
+  text-align: center;
+  width: max-content;
+  line-height: 3;
+  font-size: 2rem;
+  color: #d3d8d8;
+  margin: auto;
+  letter-spacing: 2px;
+}
+#about {
+    text-align: center;
+}
+.about__content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1600px;
+    margin: auto;
+}
+.about__content__item {
+    flex-basis: calc(100%/3);
+}

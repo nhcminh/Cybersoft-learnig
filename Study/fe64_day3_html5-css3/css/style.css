@@ -24,7 +24,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 999;
-  top:0;
+  top: 0;
 }
 header > div {
   width: 70%;
@@ -58,11 +58,11 @@ header > div {
 }
 
 .navbar ul li.active a {
-  color: #e45982;
+  color: #ff0e83;
 }
 
 .navbar ul li:hover a {
-  color: #e45982;
+  color: #ff0e83;
 }
 
 #carousel {
@@ -93,7 +93,7 @@ header > div {
 }
 
 .btn {
-  background-color: #e45982;
+  background-color: #ff0e83;
   border: 1px solid white;
   color: white;
   padding: 1rem 2rem;
@@ -108,7 +108,7 @@ header > div {
   cursor: pointer;
   background-color: white;
   color: black;
-  border: 1px solid #e45982;
+  border: 1px solid #ff0e83;
 }
 
 #intro {
@@ -232,7 +232,8 @@ header > div {
 #gallery {
   padding: 0 0 5rem 0;
 }
-#gallery > h1, #contact > h1 {
+#gallery > h1,
+#contact > h1 {
   text-transform: uppercase;
   text-align: center;
   padding: 5rem 0;
@@ -322,7 +323,9 @@ hr {
   color: white;
   position: relative;
 }
-.team__person img {width: 100%;}
+.team__person img {
+  width: 100%;
+}
 .team__person:hover .team__person__info {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.7);
@@ -373,7 +376,7 @@ hr {
 }
 
 #testi {
-  background-image: url('../images/cc1.jpg');
+  background-image: url("../images/cc1.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -399,7 +402,7 @@ hr {
   color: #272727;
 }
 .owl-carousel .item .item__content i {
-  color:#1ebeff;
+  color: #1ebeff;
   font-size: 2rem;
   margin: 0 1rem;
 }
@@ -418,12 +421,12 @@ hr {
 .owl-theme .owl-dots .owl-dot.active span {
   background: black;
 }
-.owl-theme .owl-dots .owl-dot span{
+.owl-theme .owl-dots .owl-dot span {
   background: grey;
 }
 
-.contact__form{
-  width: 80%;
+.contact__form {
+  max-width: 1200px;
   margin: auto;
 }
 .contact__form form {
@@ -434,18 +437,21 @@ hr {
   display: flex;
   justify-content: space-between;
 }
-.contact__form form div input {
+.contact__form form div input,
+.footer__col input {
   flex-basis: 49%;
   margin: 0.5rem 0;
   padding: 1.5rem;
   border-radius: 5px;
   font-size: 1.4rem;
-  border: solid 1px rgb(59,59,59);
+  border: solid 1px rgb(59, 59, 59);
   transition: all 0.5s;
 }
-.contact__form form div input:focus, .contact__form form textarea:focus {
+.contact__form form div input:focus,
+.contact__form form textarea:focus,
+.footer__col input:focus {
   outline: none;
-  border: solid 1px rgb(59,59,59);
+  border: solid 1px rgb(59, 59, 59);
   box-shadow: 0 0px 2px 2px #1abcfc;
 }
 .contact__form form textarea {
@@ -471,17 +477,17 @@ hr {
   background-color: #272727;
   color: white;
   cursor: pointer;
-
 }
 .contact__map {
- padding: 3rem 5rem;
+  padding: 3rem 5rem;
 }
 .contact__info {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 2rem;
 }
-.contact__info .col-3{
-  width: calc(90%/3);
+.contact__info .col-3 {
+  width: calc(90% / 3);
   text-align: center;
   line-height: 3;
 }
@@ -492,5 +498,102 @@ hr {
 .contact__info .col-3 p {
   font-size: 1.5rem;
   color: grey;
+  line-height: 2;
 }
-
+footer {
+  background-color: black;
+  color: white;
+  padding: 5rem 0;
+}
+.footer__content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footer__col {
+  flex-basis: 20%;
+}
+.footer__col h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 2;
+  color: #ff0e83;
+}
+.footer__col p {
+  line-height: 2;
+  text-align: left;
+  font-size: 1.2rem;
+  word-spacing: 2px;
+  margin: 0 0 1rem;
+}
+.footer__social {
+  margin-top: 2rem;
+}
+.footer__social li {
+  border: 1px solid;
+  list-style: none;
+  display: inline-block;
+  margin-right: 0.5rem;
+  transition: all 1s;
+}
+.footer__social li:hover,
+.footer__social li:hover a {
+  color: #ff0e83;
+  cursor: pointer;
+}
+.footer__social li a {
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+.footer__social li a i {
+  font-size: 1.5rem;
+}
+.footer__schedule {
+  list-style: none;
+}
+.footer__schedule li {
+  display: flex;
+  justify-content: space-between;
+  line-height: 2;
+  border-bottom: 1px dashed;
+  padding: 0.5rem 0;
+}
+.footer__schedule li span {
+  font-size: 1.2rem;
+}
+.footer__col button {
+  width: fit-content;
+  padding: 0.8rem 2.5rem;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: black;
+  font-weight: 600;
+  border: none;
+  margin: 2rem 0;
+}
+.footer__col input {
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+.copyright {
+  text-align: center;
+  text-transform: capitalize;
+  padding: 2rem;
+}
+.copyright p {
+  font-size: 1.5rem;
+}
+.copyright p a {
+  color: #ff0e83;
+  cursor: pointer !important;
+  transition: all 1s;
+  font-size: 1.5rem;
+}
+.copyright p a:hover {
+  color: white;
+}
