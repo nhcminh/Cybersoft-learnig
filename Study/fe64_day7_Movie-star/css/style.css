@@ -1,0 +1,53 @@
+li {
+  list-style: none;
+}
+a:link,
+a:visited {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.heading {
+  text-align: right;
+}
+header ul li a {
+  padding: 0.5rem 1.5rem !important;
+  transition: all 1s;
+}
+header ul li::after,
+.active::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: linear-gradient(to right, #fbbd61, #ec7532);
+  width: 0;
+  transition: all 0.5s;
+}
+.active::after {
+  width: 100% !important;
+}
+header ul li:hover::after {
+  width: 100%;
+}
+header {
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: transparent;
+}
+body {
+  position: relative;
+}
+.carousel-caption {
+    bottom: unset;
+    right: unset;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+}
+.carousel-item img {
+    min-height: 600px;
+}
