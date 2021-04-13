@@ -41,13 +41,100 @@ body {
   position: relative;
 }
 .carousel-caption {
-    bottom: unset;
-    right: unset;
-    left: 5%;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: left;
+  bottom: unset;
+  right: unset;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: left;
 }
 .carousel-item img {
-    min-height: 600px;
+  min-height: 600px;
+}
+a.btnTrailer {
+  color: white;
+}
+.btnTrailer {
+  background: linear-gradient(to right, #fbbd61, #ec7532);
+  border-radius: 30px;
+  color: white;
+  padding: 0.5rem 2rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.btnTrailer::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -10px;
+  background: rgba(255, 166, 0, 0.527);
+  width: 0%;
+  height: 100%;
+  transform: skewX(30deg);
+  transition: all 1s;
+}
+.btnTrailer:hover::after {
+  width: 120%;
+}
+.circleTag {
+  border-radius: 50%;
+  border: solid 1px;
+  padding: 10px;
+}
+.btn:hover {
+  color: white;
+}
+.carousel-indicators li {
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  background: transparent;
+  border: 3px solid white;
+  opacity: 1;
+}
+.carousel-indicators li.active {
+  background: white;
+}
+.carousel-indicators li::after {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background: transparent;
+}
+.carousel-indicators {
+  right:unset;
+  margin-left: 5%;
+  bottom: 15%
+}
+.title {
+  color: #ec7532;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.253);
+}
+.title::after {
+  content: "";
+    width: 20%;
+    background: #ec7532;
+    height: 4px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    z-index: 1;
+}
+.slick-prev {
+  left:-50px;
+}
+.slick-next {
+  right:-50px;
+}
+.slick-prev i, .slick-next i{
+  color: #ec7532;
+  font-size: 2rem;
+}
+.slick-prev::before,.slick-next::before {
+  display: none;
 }
