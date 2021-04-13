@@ -1,520 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css"
-    />
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./lib/venobox/venobox.min.css" />
-    <link rel="stylesheet" href="./lib/slick/slick-theme.css" />
-    <link rel="stylesheet" href="./lib/slick/slick.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <header class="px-5 mt-3">
-      <div class="heading text-right text-white pr-4">
-        <i class="fa fa-phone" aria-hidden="true"></i>
-        <a class="text-white border-right px-3 mr-2" href="tel:+03301234567"
-          >03301234567</a
-        >
-        <i class="fa fa-search" aria-hidden="true"></i>
-      </div>
-      <nav class="navbar navbar-expand-md navbar-dark justify-content-between">
-        <!-- Brand -->
-        <a class="navbar-brand" href="#"><img src="./img/logo.svg" alt="" /></a>
 
-        <!-- Toggler/collapsibe Button -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#collapsibleNavbar"
-        >
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./lib/venobox/venobox.min.css" />
+  <link rel="stylesheet" href="./lib/slick/slick-theme.css" />
+  <link rel="stylesheet" href="./lib/slick/slick.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div></div>
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#"><img src="./img/logo.svg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <!-- Navbar links -->
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav ml-auto border-bottom">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#">home</a>
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">what's on</a>
+              <a class="nav-link" href="#">Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">shortcodes</a>
+              <a class="nav-link" href="#">Pricing</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">news</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">contact</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Dropdown link
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
             </li>
           </ul>
         </div>
       </nav>
-    </header>
-    <section id="carousel">
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-ride="carousel"
-        data-interval="2000"
-      >
+    </div>
+  </header>
+  <section id="carousel">
+    <div id="carouselIndicators" class="carousel slide" data-interval="2000">
+      <div class="container">
         <ol class="carousel-indicators">
-          <li
-            data-target="#carouselExampleIndicators"
-            data-slide-to="0"
-            class="active"
-          ></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselIndicators" data-slide-to="1"></li>
         </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              class="d-block w-100"
-              src="./img/hero-1.jpg"
-              alt="First slide"
-            />
-            <div class="carousel-caption col-md-8 d-none d-md-block">
-              <h5>ACTION, ADVENTURE, FANTASY</h5>
-              <h1>End of the World: Part II</h1>
-              <p>
-                Claritas est etiam processus dynamicus, qui sequitur mutationem
-                consuetudium lectorum. Mirum est notare quam littera gothica,
-                quam nunc putamus parum.
-              </p>
-              <span class="circleTag">PG</span>
-              <a
-                class="venobox btn btnTrailer"
-                data-autoplay="true"
-                data-vbtype="video"
-                href="https://youtu.be/RhFMIRuHAL4"
-              >
-                <span style="position: relative; z-index: 1"
-                  ><i class="fa fa-play"></i> Play Trailer</span
-                >
-              </a>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              class="d-block w-100"
-              src="./img/hero-2.jpg"
-              alt="Second slide"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>ACTION, ADVENTURE, FANTASY</h5>
-              <h1>End of the World: Part II</h1>
-              <p>
-                Claritas est etiam processus dynamicus, qui sequitur mutationem
-                consuetudium lectorum. Mirum est notare quam littera gothica,
-                quam nunc putamus parum.
-              </p>
-              <span class="circleTag">PG</span>
-              <a
-                class="venobox btn btnTrailer"
-                data-autoplay="true"
-                data-vbtype="video"
-                href="https://youtu.be/RhFMIRuHAL4"
-              >
-                <span style="position: relative; z-index: 1"
-                  ><i class="fa fa-play"></i> Play Trailer</span
-                >
-              </a>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              class="d-block w-100"
-              src="./img/hero-3.jpg"
-              alt="Third slide"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>ACTION, ADVENTURE, FANTASY</h5>
-              <h1>End of the World: Part II</h1>
-              <p>
-                Claritas est etiam processus dynamicus, qui sequitur mutationem
-                consuetudium lectorum. Mirum est notare quam littera gothica,
-                quam nunc putamus parum.
-              </p>
-              <span class="circleTag">PG</span>
-              <a
-                class="venobox btn btnTrailer"
-                data-autoplay="true"
-                data-vbtype="video"
-                href="https://youtu.be/RhFMIRuHAL4"
-              >
-                <span style="position: relative; z-index: 1"
-                  ><i class="fa fa-play"></i> Play Trailer</span
-                >
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
-    </section>
-    <section id="incoming" class="mx-5">
-      <h1 class="title py-4">new in</h1>
-      <div class="row list-film">
-        <div class="col-sm-3">
-          <div class="text-center">
-            <img src="./img/movie-1.jpg" alt="" class="img-fluid" />
-            <p>the last ost</p>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="./img/hero-1.jpg" alt="First slide" />
+          <div class="container carousel-caption col-md-8 d-none d-md-block">
+            <h5>ACTION, ADVENTURE, FANTASY</h5>
+            <h1>End of the World: Part II</h1>
             <p>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
+              Claritas est etiam processus dynamicus, qui sequitur mutationem
+              consuetudium lectorum. Mirum est notare quam littera gothica,
+              quam nunc putamus parum.
             </p>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div><img src="./img/movie-2.jpg" alt="" class="img-fluid" /></div>
-        </div>
-        <div class="col-sm-3">
-          <div><img src="./img/movie-3.jpg" alt="" class="img-fluid" /></div>
-        </div>
-        <div class="col-sm-3">
-          <div><img src="./img/movie-4.jpg" alt="" class="img-fluid" /></div>
-        </div>
-        <div class="col-sm-3">
-          <div class="text-center">
-            <img src="./img/movie-1.jpg" alt="" class="img-fluid" />
-            <p>the last ost</p>
-            <p>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="text-center">
-            <img src="./img/movie-1.jpg" alt="" class="img-fluid" />
-            <p>the last ost</p>
-            <p>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="text-center">
-            <img src="./img/movie-1.jpg" alt="" class="img-fluid" />
-            <p>the last ost</p>
-            <p>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="text-center">
-            <img src="./img/movie-1.jpg" alt="" class="img-fluid" />
-            <p>the last ost</p>
-            <p>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="text-center">
-            <img src="./img/movie-1.jpg" alt="" class="img-fluid" />
-            <p>the last ost</p>
-            <p>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="schedule">
-      <nav>
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <a
-            class="nav-item nav-link active"
-            id="nav-home-tab"
-            data-toggle="tab"
-            href="#nav-home"
-            role="tab"
-            aria-controls="nav-home"
-            aria-selected="true"
-            >Home</a
-          >
-          <a
-            class="nav-item nav-link"
-            id="nav-profile-tab"
-            data-toggle="tab"
-            href="#nav-profile"
-            role="tab"
-            aria-controls="nav-profile"
-            aria-selected="false"
-            >Profile</a
-          >
-          <a
-            class="nav-item nav-link"
-            id="nav-contact-tab"
-            data-toggle="tab"
-            href="#nav-contact"
-            role="tab"
-            aria-controls="nav-contact"
-            aria-selected="false"
-            >Contact</a
-          >
-        </div>
-      </nav>
-      <div class="tab-content" id="nav-tabContent">
-        <div
-          class="tab-pane fade show active"
-          id="nav-home"
-          role="tabpanel"
-          aria-labelledby="nav-home-tab"
-        >
-          ...
-        </div>
-        <div
-          class="tab-pane fade"
-          id="nav-profile"
-          role="tabpanel"
-          aria-labelledby="nav-profile-tab"
-        >
-          ...
-        </div>
-        <div
-          class="tab-pane fade"
-          id="nav-contact"
-          role="tabpanel"
-          aria-labelledby="nav-contact-tab"
-        >
-          ...
-        </div>
-      </div>
-    </section>
-    <section id="comingsoon" class="bg-dark" style="background-image: url('./img/slide-1.png');background-size: cover;">
-      <div class="container mt-5 pt-5">
-        <h1 class="title py-4">coming soon</h1>
-        <div class="row text-white py-5">
-          <div class="col-6">
-            <h4>DRAMA, THRILLER</h4>
-            <h2>Deepwater Horizon</h2>
-            <div class="d-flex">
-              <div class="rating mr-3">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i
-                ><i class="fa fa-star"></i>
-                <i class="fa fa-star"></i
-                ><i class="fa fa-star"></i>
-              </div>
-              <div>
-                <i class="fa fa-calendar" aria-hidden="true"></i></i><span> 30 September, 2017</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 d-flex justify-content-center">
-            <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=zoP52-2gFrk">
-              <img src="./img/slide-1-video.png" alt="" style="width: 100%;">
+            <span class="circleTag">PG</span>
+            <a class="venobox btn btnTrailer" data-autoplay="true" data-vbtype="video"
+              href="https://youtu.be/RhFMIRuHAL4">
+              <span style="position: relative; z-index: 1"><i class="fa fa-play"></i> Play Trailer</span>
             </a>
           </div>
         </div>
-        <div class="row text-white py-5">
-          <div class="col-6">
-            <h4>DRAMA, THRILLER</h4>
-            <h2>Deepwater Horizon</h2>
-            <div class="d-flex">
-              <div class="rating mr-3">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i
-                ><i class="fa fa-star"></i>
-                <i class="fa fa-star"></i
-                ><i class="fa fa-star"></i>
-              </div>
-              <div>
-                <i class="fa fa-calendar" aria-hidden="true"></i></i><span> 30 September, 2017</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 d-flex justify-content-center">
-            <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=zoP52-2gFrk">
-              <img src="./img/slide-1-video.png" alt="" style="width: 100%;">
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./img/hero-2.jpg" alt="Second slide" />
+
+          <div class="container carousel-caption col-md-8 d-none d-md-block">
+            <h5>ACTION, ADVENTURE, FANTASY</h5>
+            <h1>End of the World: Part II</h1>
+            <p>
+              Claritas est etiam processus dynamicus, qui sequitur mutationem
+              consuetudium lectorum. Mirum est notare quam littera gothica,
+              quam nunc putamus parum.
+            </p>
+            <span class="circleTag">PG</span>
+            <a class="venobox btn btnTrailer" data-autoplay="true" data-vbtype="video"
+              href="https://youtu.be/RhFMIRuHAL4">
+              <span style="position: relative; z-index: 1"><i class="fa fa-play"></i> Play Trailer</span>
             </a>
           </div>
         </div>
-        <div class="row text-white py-5">
-          <div class="col-6">
-            <h4>DRAMA, THRILLER</h4>
-            <h2>Deepwater Horizon</h2>
-            <div class="d-flex">
-              <div class="rating mr-3">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i
-                ><i class="fa fa-star"></i>
-                <i class="fa fa-star"></i
-                ><i class="fa fa-star"></i>
-              </div>
-              <div>
-                <i class="fa fa-calendar" aria-hidden="true"></i></i><span> 30 September, 2017</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 d-flex justify-content-center">
-            <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=zoP52-2gFrk">
-              <img src="./img/slide-1-video.png" alt="" style="width: 100%;">
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./img/hero-3.jpg" alt="Third slide" />
+          <div class="container carousel-caption col-md-8 d-none d-md-block">
+            <h5>ACTION, ADVENTURE, FANTASY</h5>
+            <h1>End of the World: Part II</h1>
+            <p>
+              Claritas est etiam processus dynamicus, qui sequitur mutationem
+              consuetudium lectorum. Mirum est notare quam littera gothica,
+              quam nunc putamus parum.
+            </p>
+            <span class="circleTag">PG</span>
+            <a class="venobox btn btnTrailer" data-autoplay="true" data-vbtype="video"
+              href="https://youtu.be/RhFMIRuHAL4">
+              <span style="position: relative; z-index: 1"><i class="fa fa-play"></i> Play Trailer</span>
             </a>
           </div>
-        </div>
-        <div class="comingsoon_list">
-          <div><img class="img-fluid" src="./img/movie-10.jpg" alt=""></div>
-          <div><img class="img-fluid" src="./img/movie-9.jpg" alt=""></div>
-          <div><img class="img-fluid" src="./img/movie-11.jpg" alt=""></div>
-          <div><img class="img-fluid" src="./img/movie-12.jpg" alt=""></div>
-          <div><img class="img-fluid" src="./img/movie-13.jpg" alt=""></div>
         </div>
       </div>
-    </section>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      type="text/javascript"
-      src="http://code.jquery.com/jquery-latest.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./lib/venobox/venobox.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".venobox").venobox();
+    </div>
+  </section>
+  <section id="incoming" class="mx-5">
+    <h1 class="title py-4">new in</h1>
+    <div class="row list-film">
+      <div class="col-sm-3">
+        <div class="text-center">
+          <img src="./img/movie-1.jpg" alt="" class="img-fluid" />
+          <p>the last ost</p>
+          <p>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div><img src="./img/movie-2.jpg" alt="" class="img-fluid" /></div>
+      </div>
+      <div class="col-sm-3">
+        <div><img src="./img/movie-3.jpg" alt="" class="img-fluid" /></div>
+      </div>
+      <div class="col-sm-3">
+        <div><img src="./img/movie-4.jpg" alt="" class="img-fluid" /></div>
+      </div>
+      <div class="col-sm-3">
+        <div class="text-center">
+          <img src="./img/movie-1.jpg" alt="" class="img-fluid" />
+          <p>the last ost</p>
+          <p>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="text-center">
+          <img src="./img/movie-1.jpg" alt="" class="img-fluid" />
+          <p>the last ost</p>
+          <p>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="text-center">
+          <img src="./img/movie-1.jpg" alt="" class="img-fluid" />
+          <p>the last ost</p>
+          <p>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="text-center">
+          <img src="./img/movie-1.jpg" alt="" class="img-fluid" />
+          <p>the last ost</p>
+          <p>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="text-center">
+          <img src="./img/movie-1.jpg" alt="" class="img-fluid" />
+          <p>the last ost</p>
+          <p>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="schedule">
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+          aria-controls="nav-home" aria-selected="true">Home</a>
+        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+          aria-controls="nav-profile" aria-selected="false">Profile</a>
+        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+          aria-controls="nav-contact" aria-selected="false">Contact</a>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+        ...
+      </div>
+      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+        ...
+      </div>
+      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+        ...
+      </div>
+    </div>
+  </section>
+  <section id="comingsoon" class="bg-dark" style="background-image: url('./img/slide-1.png');background-size: cover;">
+    <div class="container mt-5 pt-5">
+      <h1 class="title py-4">coming soon</h1>
+      <div class="row text-white py-5">
+        <div class="col-6">
+          <h4>DRAMA, THRILLER</h4>
+          <h2>Deepwater Horizon</h2>
+          <div class="d-flex">
+            <div class="rating mr-3">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i><i class="fa fa-star"></i>
+              <i class="fa fa-star"></i><i class="fa fa-star"></i>
+            </div>
+            <div>
+              <i class="fa fa-calendar" aria-hidden="true"></i></i><span> 30 September, 2017</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 d-flex justify-content-center">
+          <a class="venobox" data-autoplay="true" data-vbtype="video"
+            href="https://www.youtube.com/watch?v=zoP52-2gFrk">
+            <img src="./img/slide-1-video.png" alt="" style="width: 100%;">
+          </a>
+        </div>
+      </div>
+      <div class="row text-white py-5">
+        <div class="col-6">
+          <h4>DRAMA, THRILLER</h4>
+          <h2>Deepwater Horizon</h2>
+          <div class="d-flex">
+            <div class="rating mr-3">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i><i class="fa fa-star"></i>
+              <i class="fa fa-star"></i><i class="fa fa-star"></i>
+            </div>
+            <div>
+              <i class="fa fa-calendar" aria-hidden="true"></i></i><span> 30 September, 2017</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 d-flex justify-content-center">
+          <a class="venobox" data-autoplay="true" data-vbtype="video"
+            href="https://www.youtube.com/watch?v=zoP52-2gFrk">
+            <img src="./img/slide-1-video.png" alt="" style="width: 100%;">
+          </a>
+        </div>
+      </div>
+      <div class="row text-white py-5">
+        <div class="col-6">
+          <h4>DRAMA, THRILLER</h4>
+          <h2>Deepwater Horizon</h2>
+          <div class="d-flex">
+            <div class="rating mr-3">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i><i class="fa fa-star"></i>
+              <i class="fa fa-star"></i><i class="fa fa-star"></i>
+            </div>
+            <div>
+              <i class="fa fa-calendar" aria-hidden="true"></i></i><span> 30 September, 2017</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 d-flex justify-content-center">
+          <a class="venobox" data-autoplay="true" data-vbtype="video"
+            href="https://www.youtube.com/watch?v=zoP52-2gFrk">
+            <img src="./img/slide-1-video.png" alt="" style="width: 100%;">
+          </a>
+        </div>
+      </div>
+      <div class="comingsoon_list">
+        <div><img class="img-fluid" src="./img/movie-10.jpg" alt=""></div>
+        <div><img class="img-fluid" src="./img/movie-9.jpg" alt=""></div>
+        <div><img class="img-fluid" src="./img/movie-11.jpg" alt=""></div>
+        <div><img class="img-fluid" src="./img/movie-12.jpg" alt=""></div>
+        <div><img class="img-fluid" src="./img/movie-13.jpg" alt=""></div>
+      </div>
+    </div>
+  </section>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./lib/venobox/venobox.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".venobox").venobox();
+    });
+    $(document).ready(function () {
+      $(".list-film").slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        prevArrow:
+          '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i> </button>',
+        nextArrow:
+          '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ],
       });
-      $(document).ready(function () {
-        $(".list-film").slick({
-          dots: true,
-          infinite: true,
-          speed: 300,
-          slidesToShow: 4,
-          slidesToScroll: 4,
-          prevArrow:
-            '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i> </button>',
-          nextArrow:
-            '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
-          responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: true,
-              },
+    });
+    $(document).ready(function () {
+      $(".comingsoon_list").slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        prevArrow:
+          '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+        nextArrow:
+          '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true,
             },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-              },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
             },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-              },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
             },
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-          ],
-        });
+          },
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ],
       });
-      $(document).ready(function () {
-        $(".comingsoon_list").slick({
-          dots: true,
-          infinite: true,
-          speed: 300,
-          slidesToShow: 4,
-          slidesToScroll: 4,
-          prevArrow:
-            '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
-          nextArrow:
-            '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
-          responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: true,
-              },
-            },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-              },
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-              },
-            },
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-          ],
-        });
-      });
-      
-    </script>
-    <script src="./lib/slick/slick.min.js"></script>
-    <script src="./js/main.js"></script>
-  </body>
+    });
+
+  </script>
+  <script src="./lib/slick/slick.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
 </html>
