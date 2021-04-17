@@ -1,31 +1,108 @@
+* {
+  font-size: 16px;
+}
 body {
   position: relative;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 li {
   list-style: none;
 }
 a:link,
-a:visited {
+a:visited,
+a:focus {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 200;
+  letter-spacing: 2px;
+  outline: none;
+}
+header {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+header div div span i.fas {
+  font-size: 0.9rem;
+}
+.header__phone {
+  border-right: 1px solid;
+  font-size: 0.8rem;
+  font-weight: 600 !important;
+}
+.navbar {
+  padding: 0;
+}
+.navbar-nav {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.navbar-nav li {
+  position: relative;
+}
+
+.navbar-nav li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(to right, #fbbd61, #ec7532);
+  position: absolute;
+  transition: all 0.5s;
+}
+.navbar-nav li:hover::after {
+  width: 100%;
+}
+.active::after {
+  width: 100% !important;
+}
+
+.navbar-nav li > a {
+  margin: 0 1rem;
+  font-size: 1rem;
+}
+.dropdown-toggle::after {
+  display: none;
+}
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown > .dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
+}
+.dropdown-menu {
+  color: white;
+  background: linear-gradient(to right, #fbbd61, #ec7532);
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+}
+.dropdown-item {
+  font-size: 0.8rem;
+}
+.dropdown-item:hover {
+  color: white;
+  background: linear-gradient(to right, #fbbd61, #ec7532);
+  width: max-content;
+  border: none;
+}
 .carousel-caption {
-  bottom: unset;
-  right: unset;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: left;
+  width: 100%;
 }
 .carousel-item img {
   min-height: 90vh;
 }
 a.btnTrailer {
   color: white;
+  margin-left: 1rem;
 }
 .btnTrailer {
   background: linear-gradient(to right, #fbbd61, #ec7532);
@@ -36,6 +113,8 @@ a.btnTrailer {
   font-size: 1rem;
   position: relative;
   overflow: hidden;
+  border: none;
+  outline: none;
 }
 .btnTrailer::after {
   content: "";
@@ -49,7 +128,7 @@ a.btnTrailer {
   transition: all 1s;
 }
 .btnTrailer:hover::after {
-  width: 120%;
+  width: 130%;
 }
 .circleTag {
   border-radius: 50%;
@@ -79,18 +158,26 @@ a.btnTrailer {
 .carousel-indicators {
   right: unset;
   bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: left;
+  margin: 0;
+  padding-left: 15px;
 }
 .title {
   color: #ec7532;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   position: relative;
   border-bottom: 1px solid rgba(0, 0, 0, 0.253);
+  margin-bottom: 2rem;
+  padding: 1rem 1rem 1rem 0;
+  letter-spacing: 2px;
 }
 .title::after {
   content: "";
-  width: 20%;
-  background: #ec7532;
+  width: 130px;
+  background: linear-gradient(to right, #fbbd61, #ec7532);
   height: 4px;
   position: absolute;
   bottom: 0px;
@@ -103,6 +190,11 @@ a.btnTrailer {
 .slick-next {
   right: -50px;
 }
+.slick-prev,
+.slick-next {
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
 .slick-prev i,
 .slick-next i {
   color: #ec7532;
@@ -111,4 +203,136 @@ a.btnTrailer {
 .slick-prev::before,
 .slick-next::before {
   display: none;
+}
+
+.list-film h4 {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+.list-film span {
+  color: #fbbd61;
+}
+.list-film span i.grey {
+  color: grey;
+}
+
+.list-film__item .overlay__card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+
+  transition: all 0.5s;
+}
+.list-film__item .overlay__card .overlay__text::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  transform: skewX(30deg);
+  left: -100px;
+  bottom: 0;
+  background: linear-gradient(to right, #fbbd61d5, #ec7632e0);
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 3.5rem;
+}
+.list-film__item .overlay__card .overlay__text:hover:before {
+  width: 200%;
+}
+.list-film__item .overlay__card .overlay__text {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+.list-film__item .overlay__card .overlay__text div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.5s;
+}
+.list-film__item .overlay__card .overlay__text:hover div {
+  opacity: 1;
+  transform: scale(1);
+}
+.list-film__item .overlay__card .overlay__text div a i {
+  font-size: 1rem;
+  padding: 2rem;
+  border: 1px solid;
+  border-radius: 50%;
+  color: white;
+  margin-bottom: 1rem;
+  transform: scale(1);
+  transition: all 0.5s;
+}
+
+.list-film__item .overlay__card .overlay__text div a i:hover {
+  transform: scale(0.8);
+}
+.list-film__item .overlay__card .overlay__text div p {
+  color: white;
+  font-weight: 100;
+  scale: 0.8;
+  opacity: 1;
+}
+.nav-tabs .nav-link.active{
+  color: black;
+  border-color:#fff #fff #dee2e6 #fff ;
+}
+.nav-tabs .nav-link.active:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #fbbd61d5, #ec7632e0);
+}
+.nav-tabs .nav-link {
+  color: black;
+  position: relative;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+  border-color:#fff #fff #dee2e6 #fff ;
+}
+.nav-tabs .nav-item .nav-link:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(to right, #fbbd61d5, #ec7632e0);
+  transition: all 0.5s;
+}
+.nav-tabs .nav-item .nav-link:hover:after {
+  width: 100%;
+}
+.tab-content div.row {
+  padding-top: 2rem;
+}
+.tab-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.tab-content div.row div ul {
+  display: inline-block;
+}
+.tab-content div.row div ul li {
+  display: inline;
+  padding: 0.5rem 0.6rem;
+  margin: 0 5px;
+  background: #d8d8d8;
+  color: #717171;
+  border-radius: 5px;
 }

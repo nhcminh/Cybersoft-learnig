@@ -383,6 +383,9 @@ header nav ul li a:hover {
   background: rgba(0, 0, 0, 0.79);
   color: white;
 }
+.agents__member__card img {
+  width: 100%;
+}
 .agents__member__card h2 {
   color: #00cdce;
   font-size: 2rem;
