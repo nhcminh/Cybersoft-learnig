@@ -1,0 +1,5 @@
+@for $size from 1 through 3 {
+    .header-#{$size} {
+        font-size: 2rem * $size;
+    }
+}

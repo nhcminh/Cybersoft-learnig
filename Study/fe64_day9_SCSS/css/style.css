@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+#heading .demo {
+  color: green;
+  font-size: 50px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#heading .demo2 {
+  font-size: 50px;
+  color: green;
+}
+
+@media screen and (max-width: 600px) {
+  #heading .demo2 {
+    font-size: 25px;
+  }
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+}
+
+.container .left {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  background-color: red;
+  text-align: center;
+  padding: 100px 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.container .right {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  background-color: blue;
+  text-align: center;
+  padding: 100px 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.container:hover .left {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  background-color: blue;
+  text-align: center;
+  padding: 100px 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.container:hover .right {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  background-color: red;
+  text-align: center;
+  padding: 100px 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.container2 {
+  background-color: orange;
+}
+
+.demo-btn {
+  margin-top: 2rem;
+}
+
+.demo-btn .btn-1, .demo-btn .btn-2 {
+  border: none;
+  padding: 1rem 2rem;
+  background: linear-gradient(45deg, blue, lime);
+  color: white;
+  border-radius: 5px;
+}
+
+.demo-btn .btn-2 {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.header-1 {
+  font-size: 2rem;
+}
+
+.header-2 {
+  font-size: 4rem;
+}
+
+.header-3 {
+  font-size: 6rem;
+}
+
+.google {
+  background-image: url("../img/google.jpg");
+}
+
+.facebook {
+  background-image: url("../img/facebook.jpg");
+}
+
+.twitter {
+  background-image: url("../img/twitter.jpg");
+}
+
+.cols-4 {
+  width: 25%;
+}
+
+.cols-3 {
+  width: 33.33333%;
+}
+
+.cols-2 {
+  width: 50%;
+}
+
+.cols-1 {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

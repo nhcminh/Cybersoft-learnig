@@ -1,0 +1,12 @@
+#carousel {
+    background: url('../../img/cover.jpg');
+    height: 600px;
+    background-size: cover;
+    @include form;
+    .form-control {
+        background-color: white;
+    }
+    .input-group-text {
+        @extend .form-control;
+    }
+}

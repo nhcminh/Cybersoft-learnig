@@ -1,0 +1,5 @@
+@each $social in $socials {
+    .#{$social} {
+        background-image: url('../img/#{$social}.jpg');
+    }
+}

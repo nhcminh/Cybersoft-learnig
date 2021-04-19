@@ -1,0 +1,6 @@
+@while $col>0 {
+    .cols-#{$col} {
+        width: 100% / $col;
+    }
+    $col: $col - 1;
+}

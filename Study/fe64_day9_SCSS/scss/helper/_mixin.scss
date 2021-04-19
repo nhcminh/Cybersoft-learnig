@@ -1,0 +1,7 @@
+@mixin block($width, $bgcolor) {
+    flex-basis: $width;
+    background-color: $bgcolor;
+    text-align: center;
+    padding: 100px 0;
+    transition: all 1s;
+}

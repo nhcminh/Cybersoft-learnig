@@ -1,0 +1,18 @@
+#heading {
+    .demo {
+        color: $color;
+        font: {
+            size: $font-size;
+            weight: bold;
+            style: italic;
+        }
+        ;
+    }
+    .demo2 {
+        font-size: $font-size;
+        color: $color;
+        @media screen and (max-width: 600px) {
+            font-size: $font-size/2;
+        }
+    }
+}

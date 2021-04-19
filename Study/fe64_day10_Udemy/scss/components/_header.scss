@@ -1,0 +1,41 @@
+header {
+    .navbar {
+        background-color: white;
+        font-size: 13px;
+        color: #505763;
+        .header__left {
+            .navbar-brand {
+                img {
+                    width: 100px;
+                }
+                flex-grow: 1;
+            }
+            .categories {
+                flex-grow: 1;
+            }
+            .search-box {
+                flex-grow: 5;
+                @include form;
+            }
+        }
+        .header__right {
+            a.nav-link {
+                color: #505763;
+            }
+            .btn-login {
+                border: 1px solid black;
+                border-radius: 0;
+                text-transform: capitalize;
+            }
+            .btn-signup {
+                background-color: #ec5252;
+                border-radius: 0;
+                color: white;
+                text-transform: capitalize;
+            }
+            .cart {
+                border-left: 1px solid #ced4da;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.demo-btn {
+    margin-top: 2rem;
+    .btn-1 {
+        border: none;
+        padding: 1rem 2rem;
+        background: linear-gradient(45deg, blue, lime);
+        color: white;
+        border-radius: 5px;
+    }
+    .btn-2 {
+        @extend .btn-1;
+        font-weight: bold;
+        font-style: italic;
+    }
+}
