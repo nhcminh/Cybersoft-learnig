@@ -1,0 +1,114 @@
+li {
+  list-style: none;
+}
+button:focus {
+  outline: none;
+}
+
+.navbar-brand {
+  color: #868c94;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.navbar-brand span {
+  color: #7f67f8;
+  font-size: 2.5rem;
+}
+.fa-bars {
+  font-size: 1.5rem;
+  transform: translateY(15%);
+}
+button.navbar-toggler {
+  background-color: #7f67f8;
+}
+.nav-link,
+.nav-link:visited,
+.nav-link:link {
+  color: #363d41;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+.nav-item.active .nav-link,
+.nav-link:focus,
+.nav-item:hover {
+  color: #7f67f8;
+}
+.nav-item:hover .nav-link {
+  color: #7f67f8;
+}
+#carousel {
+    background: url('../images/b1.jpg');
+    background-size: cover;
+}
+#slider {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.carousel__content {
+    min-height: 700px;
+}
+.carousel-caption {
+    top:50%;
+    transform: translateY(-50%);
+}
+.carousel-caption h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    line-height: 1.6;
+}
+.btn-trans,.btn-purple {
+    width: 130px;
+    color: white;
+    border: 1px solid;
+    border-radius: 0;
+    text-transform: capitalize;
+    padding: .5rem 1.5rem;
+}
+.btn-purple,.btn-trans:hover {
+    background-color: #7f67f8;
+    border: #7f67f8 solid 1px !important;
+}
+
+.btn-purple:hover {
+    border: 1px solid white !important;
+    background-color: transparent;
+    color: white;
+}
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    opacity: 1;
+}
+.carousel-indicators li.active {
+    background-color: #7f67f8;
+}
+@media (max-width: 575px) {
+  .nav-link,
+  .nav-link:visited,
+  .nav-link:link {
+    color: white;
+  }
+  .navbar-nav {
+    background-color: black;
+  }
+  .carousel__content {
+      min-height: 350px;
+  }
+  .carousel-caption {
+      width: 80%;
+      top: 40%;
+      left: 50%;
+      right: 0;
+      transform: translate(-50%,-50%);
+  }
+  .carousel-caption h3 {
+      font-size: 1.2rem;
+      letter-spacing: normal;
+      word-spacing: normal;
+  }
+}
