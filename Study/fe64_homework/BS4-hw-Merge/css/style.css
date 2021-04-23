@@ -1,3 +1,7 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 1px
+}
 li {
   list-style: none;
 }
@@ -53,7 +57,6 @@ button.navbar-toggler {
     transform: translateY(-50%);
 }
 .carousel-caption h3 {
-    font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
     font-size: 3rem;
     letter-spacing: 5px;
@@ -78,14 +81,58 @@ button.navbar-toggler {
     background-color: transparent;
     color: white;
 }
+.carousel-indicators {
+  bottom: 20%;
+}
 .carousel-indicators li {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     opacity: 1;
+    background-color: #7f67f8;
 }
 .carousel-indicators li.active {
-    background-color: #7f67f8;
+    background-color: white;
+}
+#whats h1, #stats h1 {
+  font-size: 3.5rem;
+  text-shadow: 0 1px 2px rgb(0 0 0 / 37%);
+}
+#whats i, #stats b {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #f97c69;
+}
+#whats h3, #stat h3 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+#whats .container > .row, #stats .container > .row{
+  border-bottom: 1px solid #e8e8e8;
+}
+#whats .container .row:last-child .col-12:nth-child(2), #stats .container .row:last-child .col-12:nth-child(2){
+  border-left: 1px solid #e8e8e8;
+  border-right: 1px solid #e8e8e8;
+}
+#whats p, #stats p {
+  color: #777;
+}
+#cta {
+  background: url('../images/3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+#cta h1 {
+  letter-spacing: 4px;
+}
+#cta button {
+  letter-spacing: 2px;
+  padding: 0.5rem .5rem;
+}
+#cta .orange-hover:hover {
+  background-color: #f97c69;
+  border-color: #f97c69 !important;
 }
 @media (max-width: 575px) {
   .nav-link,
@@ -95,6 +142,12 @@ button.navbar-toggler {
   }
   .navbar-nav {
     background-color: black;
+  }
+  #collapsibleNavbar {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 11;
   }
   .carousel__content {
       min-height: 350px;
@@ -110,5 +163,23 @@ button.navbar-toggler {
       font-size: 1.2rem;
       letter-spacing: normal;
       word-spacing: normal;
+  }
+  .carousel-indicators {
+    bottom: 10px;
+  }
+  #whats h1, #stats h1 {
+    font-size: 2.3rem;
+  }
+  #whats .container .row:last-child .col-12:nth-child(2), #stats .container .row:last-child .col-12:nth-child(2){
+    border: none;
+  }
+  #stats h3 {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  #cta h1 {
+    letter-spacing: 1px;
+    font-size: 2rem;
   }
 }
