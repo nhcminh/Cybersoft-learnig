@@ -368,7 +368,9 @@ a.btnTrailer {
     transform: translateX(0);
   }
 }
-
+#schedule {
+  margin-top: 10rem;
+}
 #schedule .nav-tabs .nav-link.active {
   color: black;
   border-color: #fff #fff #dee2e6 #fff;
@@ -738,6 +740,7 @@ footer .container .row:last-child p{
     flex-direction: column;
     align-items: flex-start;
   }
+  
   #schedule h4 {
     font-size: 0.8rem;
     color: orange;
