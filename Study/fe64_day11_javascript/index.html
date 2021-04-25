@@ -2,18 +2,83 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
 </head>
 
 <body>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">1</td>
+                <td>Minh</td>
+                <td>a</td>
+            </tr>
+        </tbody>
+    </table>
 
+    <input id="txt" type="text" value="cybersoft" />
+    <button id="btn-click" class="btn btn-success" onclick="handleClick()"></button>
 
+    <hr />
 
+    <div id="change">noi dung truoc khi thay doi</div>
+    <button id="btn-click2">nhan em di</button>
+    <button id="disable">disable</button>
+    <button id="enable">enable</button>
 
+    <div>
+        <img id="light" src="./imgs/pic_bulboff.gif" alt="" />
+    </div>
+    <button id="on" class="btn btn-success">On</button>
+    <button id="off" class="btn btn-success">Off</button>
+
+    <hr />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <!-- <img class="card-img-top" src="holder.js/100x180/" alt=""> -->
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input id="username" type="text" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input id="password" type="password" class="form-control" />
+                            </div>
+                            <div>
+                                <button id="btn-submit" class="btn btn-primary">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="notice" class="card-footer">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="./main.js"></script>
 </body>
 

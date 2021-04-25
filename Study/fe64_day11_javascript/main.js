@@ -88,20 +88,20 @@ function avg(a, b, c) {
 
 function xeploai(avg_score) {
     // switch (avg_score) {
-    if (6 > avg_score && avg_score > 5) {
+    if (6 > avg_score && avg_score >= 5) {
         console.log("TB");
-    } else if (9 > avg_score && avg_score > 8) {
+    } else if (9 > avg_score && avg_score >= 8) {
         console.log("Gioi");
-    } else if (8 > avg_score && avg_score > 7)
+    } else if (8 > avg_score && avg_score >= 7)
         console.log("Kha");
     // break;
-    else if (7 > avg_score && avg_score > 6)
+    else if (7 > avg_score && avg_score >= 6)
         console.log("TB Kha");
     // break;
-    else if (avg_score > 5)
+    else if (avg_score >= 5)
         console.log("XS");
     // break;
-    else if (avg_score < 5)
+    else if (avg_score <= 5)
         console.log("Yeu");
     // break;
     else console.log("khong xep loai");
@@ -111,3 +111,88 @@ function xeploai(avg_score) {
 var avg_score = avg(6, 6, 6);
 console.log(avg_score)
 xeploai(avg_score);
+
+
+
+
+// _btn = document.getElementById('btn-click').onclick = function() {
+//     console.log(123123123)
+//     var _input = document.getElementById('txt').value;
+//     console.log(_input)
+// }
+
+// document.getElementById('btn-click').addEventListener('click', function() {
+//     console.log(12312312);
+// })
+
+
+// $('#btn-click').click(function(){ console.log(123) })
+
+function handleClick() {
+    var _input = document.getElementById('txt').value;
+    console.log(_input);
+}
+
+// function btnclick() {
+document.getElementById('btn-click2').onclick = function() {
+        document.getElementById('change').innerText = "em phe qua nhan nua di";
+        document.getElementById('btn-click2').addEventListener('click', function() {
+            document.getElementById('change').innerText = "kimochi";
+            document.getElementById('btn-click2').removeAttribute('event-listener');
+        })
+    }
+    // }
+
+
+document.getElementById('disable').addEventListener('click', function() {
+    document.getElementById('btn-click2').disabled = true;
+})
+document.getElementById('enable').onclick = function() {
+    document.getElementById('btn-click2').disabled = false;
+}
+
+
+
+var _light = document.getElementById('light');
+
+var _on = document.getElementById('on');
+var _off = document.getElementById('off');
+
+_on.addEventListener('click', function() {
+    // _light.setAttribute('src', './imgs/pic_bulbon.gif');
+    _light.src = "./imgs/pic_bulbon.gif"
+})
+_off.addEventListener('click', function() {
+    // _light.setAttribute('src', './imgs/pic_bulboff.gif');
+    _light.src = './imgs/pic_bulboff.gif';
+})
+
+
+
+
+
+
+
+/**
+ * Validations
+ */
+
+
+var _notice = document.getElementById('notice');
+
+var _btnsubmit = document.getElementById('btn-submit');
+
+_btnsubmit.addEventListener('click', function(event) {
+    event.preventDefault();
+    var _username = document.getElementById('username').value;
+    var _password = document.getElementById('password').value;
+    if (_username == 'cybersoft' && _password == 123456) {
+        _notice.innerHTML = "login thanh cong";
+        _notice.classList.add('alert-success');
+        _notice.classList.remove('alert-danger');
+    } else {
+        _notice.innerHTML = "login that bai";
+        _notice.classList.add('alert-danger');
+        _notice.classList.remove('alert-succes');
+    }
+})
