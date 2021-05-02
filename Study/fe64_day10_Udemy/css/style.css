@@ -3,6 +3,12 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-size: 15px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
 }
 
 header .navbar {
@@ -62,12 +68,14 @@ header .navbar .header__left .search-box .input-group-text:hover {
 
 header .navbar .header__right a.nav-link {
   color: #505763;
+  white-space: nowrap;
 }
 
 header .navbar .header__right .btn-login {
   border: 1px solid black;
   border-radius: 0;
   text-transform: capitalize;
+  white-space: nowrap;
 }
 
 header .navbar .header__right .btn-signup {
@@ -75,6 +83,7 @@ header .navbar .header__right .btn-signup {
   border-radius: 0;
   color: white;
   text-transform: capitalize;
+  white-space: nowrap;
 }
 
 header .navbar .header__right .cart {
@@ -116,5 +125,20 @@ header .navbar .header__right .cart {
 
 #carousel .form-control, #carousel .input-group-text {
   background-color: white;
+}
+
+#banner {
+  background: linear-gradient(-45deg, #ec5252 0%, #6e1a52 100%);
+  color: white;
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+
+#banner b {
+  font-size: 1.1rem;
+}
+
+.tab-pane {
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */

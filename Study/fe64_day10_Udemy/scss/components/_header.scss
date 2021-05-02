@@ -21,17 +21,20 @@ header {
         .header__right {
             a.nav-link {
                 color: #505763;
+                white-space: nowrap;
             }
             .btn-login {
                 border: 1px solid black;
                 border-radius: 0;
                 text-transform: capitalize;
+                white-space: nowrap;
             }
             .btn-signup {
                 background-color: #ec5252;
                 border-radius: 0;
                 color: white;
                 text-transform: capitalize;
+                white-space: nowrap;
             }
             .cart {
                 border-left: 1px solid #ced4da;
