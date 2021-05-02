@@ -1,0 +1,16 @@
+@mixin button($bgcolor1,$bgcolor2) {
+    padding: 0.7rem 2.2rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    background-color: $bgcolor1;
+    transition: all 0.5s;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        background-color: $bgcolor2;
+    }
+}

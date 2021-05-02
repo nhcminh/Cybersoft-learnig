@@ -1,0 +1,64 @@
+#signin {
+  background: url("../../images/banner2.jpg") rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+  h1 {
+    font-size: 4rem;
+    padding-right: 10rem;
+  }
+  p {
+    font-size: 1.3rem;
+    color: #fff;
+    opacity: 0.8;
+
+  }
+  .content {
+      margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+    border-radius: 10px;
+    background-color: white;
+    border-bottom: solid transparent;
+    p {
+        font-weight: 600;
+        color: black;
+        font-size: 1.5rem;
+    }
+    a, p span {
+        color: #808080;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+    i {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: $orange;
+      transition: all 0.5s;
+      &:hover {
+        color: #e4277e;
+      }
+    }
+    &:hover {
+      border-color: $orange;
+      border-bottom-style: solid;
+    }
+  }
+  form {
+      height: 80%;
+      border-radius: 10px;
+      button {
+          @include button($orange,$blue);
+          width: 100%;
+      }
+      label {
+          color: black;
+          font-size: 1.3rem;
+      }
+      input {
+          font-size: 2rem;
+          border-radius: 20px;
+          padding: 1rem;
+      }
+  }
+}

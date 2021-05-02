@@ -1,0 +1,27 @@
+header {
+  background-color: #f45d01;
+  padding: 1rem 0;
+  color: white;
+  .container {
+    .row {
+      .col-md-6 {
+        ul {
+          li {
+            margin-right: 1rem;
+          }
+        }
+      }
+      .col-md-2 {
+         ul {
+           li {
+             margin-left: 10px;
+           }
+         }
+      }
+      a {
+        margin-left: 10px;
+        color: white;
+      }
+    }
+  }
+}

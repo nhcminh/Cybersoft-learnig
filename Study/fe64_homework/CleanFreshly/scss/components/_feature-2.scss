@@ -1,0 +1,27 @@
+#feature-2 {
+  i {
+    color: $blue;
+    font-size: 3rem;
+  }
+  a {
+    display: block;
+    color: black;
+    font-size: 2rem;
+    margin: 1.5rem 0;
+  }
+  p {
+    color: #808080;
+    font-size: 1.2rem;
+  }
+  .feature-2__item {
+      padding: 3rem 0;
+      border-radius: 10px;
+      border-bottom: solid transparent;
+    &:hover {
+      border-color: $blue;
+      box-shadow: 0 40px 90px 0 #0000001f;
+      border-bottom-style: solid;
+      background: rgba(255, 255, 255, 0.05);
+    }
+  }
+}

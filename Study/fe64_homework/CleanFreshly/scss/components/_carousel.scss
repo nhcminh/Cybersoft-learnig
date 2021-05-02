@@ -1,0 +1,69 @@
+#carousel {
+  .item {
+    background-blend-mode: multiply;
+    background-size: cover !important;
+    background-position: center !important;
+    .container {
+      .row {
+        min-height: 700px;
+        align-items: center;
+        h6 {
+          color: $orange;
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+        h5 {
+          color: white;
+          font-size: 5rem;
+          font-weight: bold;
+        }
+        button {
+          @include button(transparent, white);
+          border: 2px solid white;
+          margin-top: 2rem;
+          &:hover {
+            color: $orange;
+          }
+        }
+      }
+    }
+  }
+  .bg-1 {
+    background: rgba(0, 0, 0, 0.5) url("../../images/banner1.jpg");
+  }
+  .bg-2 {
+    background: rgba(0, 0, 0, 0.5) url("../../images/banner2.jpg");
+  }
+  .bg-3 {
+    background: rgba(0, 0, 0, 0.5) url("../../images/banner3.jpg");
+  }
+  .bg-4 {
+    background: rgba(0, 0, 0, 0.5) url("../../images/banner4.jpg");
+  }
+  .owl-nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .owl-prev {
+        border-radius: 50%;
+        transition: all 0.5s;
+      i {
+        padding: 10px 15px;
+        border-radius: 50%;
+        font-size: 3rem;
+        color: white;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+    }
+    .owl-next {
+        @extend .owl-prev;
+    }
+  }
+}

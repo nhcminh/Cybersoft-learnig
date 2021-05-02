@@ -1,10 +1,12 @@
 ### OSX ###
 # General
 *~
+.vscode/
 public/
 .firebase/
 .firebaserc
 firebase.json
+
 node_modules/
 .DS_Store
 .AppleDouble
