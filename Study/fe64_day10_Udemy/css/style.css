@@ -3,6 +3,12 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-size: 15px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
 }
 
 header .navbar {
@@ -62,12 +68,14 @@ header .navbar .header__left .search-box .input-group-text:hover {
 
 header .navbar .header__right a.nav-link {
   color: #505763;
+  white-space: nowrap;
 }
 
 header .navbar .header__right .btn-login {
   border: 1px solid black;
   border-radius: 0;
   text-transform: capitalize;
+  white-space: nowrap;
 }
 
 header .navbar .header__right .btn-signup {
@@ -75,6 +83,7 @@ header .navbar .header__right .btn-signup {
   border-radius: 0;
   color: white;
   text-transform: capitalize;
+  white-space: nowrap;
 }
 
 header .navbar .header__right .cart {
@@ -82,7 +91,7 @@ header .navbar .header__right .cart {
 }
 
 #carousel {
-  background: url("../../img/cover.jpg");
+  background: url("../img/cover.jpg");
   height: 600px;
   background-size: cover;
 }
@@ -116,5 +125,48 @@ header .navbar .header__right .cart {
 
 #carousel .form-control, #carousel .input-group-text {
   background-color: white;
+}
+
+#banner {
+  background: linear-gradient(-45deg, #ec5252 0%, #6e1a52 100%);
+  color: white;
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+
+#banner b {
+  font-size: 1.1rem;
+}
+
+.tab-pane {
+  overflow: hidden;
+}
+
+.item__hover .best-seller {
+  background: yellow;
+  padding: 4px 12px 4px 8px;
+  -webkit-clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.6rem;
+}
+
+.item__hover .btn-signup {
+  background-color: #ec5252;
+  border-radius: 0;
+  color: white;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.item__hover .details li {
+  list-style: none;
+  display: inline;
+  font-size: 12px;
+}
+
+.item__hover .infor li {
+  margin-left: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

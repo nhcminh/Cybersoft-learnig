@@ -81,9 +81,9 @@ header div div span i.fas {
   width: 100%;
 }
 
-.active::after {
+/* .active::after {
   width: 100% !important;
-}
+} */
 
 .navbar-nav li > a {
   margin: 0 1rem;
@@ -368,7 +368,9 @@ a.btnTrailer {
     transform: translateX(0);
   }
 }
-
+#schedule {
+  margin-top: 10rem;
+}
 #schedule .nav-tabs .nav-link.active {
   color: black;
   border-color: #fff #fff #dee2e6 #fff;
@@ -602,7 +604,7 @@ a.btnTrailer {
   color: #717171;
 }
 
-#schedule .col-10 a {
+#schedule .col-12 a {
   font-size: 0.8rem;
   color: orange;
   letter-spacing: 2px;
@@ -625,7 +627,7 @@ a.btnTrailer {
 }
 
 footer {
-  background: #000;
+  background: #101010;
 }
 
 footer h1 {
@@ -653,8 +655,11 @@ footer a i {
   transition: all 0.5s;
 }
 
-footer .container .row:last-child {
+footer .container .row:last-child p{
+  width: 90%;
   border-top: 1px solid #333;
+  margin: auto;
+  padding: 1rem 0;
 }
 
 .overlay__black {
@@ -667,13 +672,13 @@ footer .container .row:last-child {
 }
 
 .fixed {
-  position: sticky !important;
+  position: fixed !important;
   background: #000;
-  width: 100vw;
-  /* left: 0; */
-  top: 0;
-  /* z-index: 99; */
-  /* visibility: hidden; */
+  width: 100%;
+  left: 0;
+  top: -100px;
+  z-index: 99;
+  transition: all 0.5s;
 }
 
 .fixed .active a {
@@ -699,7 +704,7 @@ footer .container .row:last-child {
   position: absolute;
   top: 65px;
   z-index: 999;
-  width: 100vw;
+  width: 100%;
 }
 @media (max-width: 576px) {
   .nav-link,
@@ -713,9 +718,9 @@ footer .container .row:last-child {
   .navbar-nav li::after {
     display: none;
   }
-  #navbar-container {
+  /* #navbar-container {
     width: 100vw;
-  }
+  } */
   #navbar-container .navbar-brand {
     margin-left: 10px;
   }
@@ -735,6 +740,7 @@ footer .container .row:last-child {
     flex-direction: column;
     align-items: flex-start;
   }
+  
   #schedule h4 {
     font-size: 0.8rem;
     color: orange;
@@ -748,4 +754,40 @@ footer .container .row:last-child {
   #schedule p {
     color: #717171;
   }
+  #schedule .nav-tabs .nav-link.active::after, #schedule .nav-tabs .nav-item .nav-link:hover:after{
+    content: "";
+    width: 4px;
+    height: 100% !important;
+  }
+  #schedule .nav-tabs .nav-item .nav-link:after{
+    width: 4px;
+    height: 0;
+    transition: all 0.1s;
+  }
+  #schedule .nav-tabs .nav-link,#schedule .nav-tabs .nav-link:hover{
+    border:none;
+    text-align: left;
+    padding: 0.5rem 0 0.5rem 1rem;
+  }
+  .comingsoon_list_movie {
+    padding: 2rem 0;
+  }
+  .comingsoon_list_movie .nav-item {
+    margin:0 15px;
+  }
+  footer .col-12 {
+    margin-bottom: 2rem;
+  }
+  .carousel-indicators {
+    bottom: 20px;
+  }
+  .carousel-caption {
+    top: 50%;
+  }
+}
+@media (max-width:1024px) {
+  nav .navbar-nav li > a {
+    margin: 0 3px !important;
+  }
+  
 }
