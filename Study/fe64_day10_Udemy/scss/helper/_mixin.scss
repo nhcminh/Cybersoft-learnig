@@ -22,3 +22,24 @@
         }
     }
 }
+
+@mixin best-seller {
+    .best-seller {
+        background: yellow;
+        padding: 4px 12px 4px 8px;
+        clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 0.6rem;
+    }
+}
+
+@mixin btn-signup {
+    .btn-signup {
+        background-color: #ec5252;
+        border-radius: 0;
+        color: white;
+        text-transform: capitalize;
+        white-space: nowrap;
+    }
+}

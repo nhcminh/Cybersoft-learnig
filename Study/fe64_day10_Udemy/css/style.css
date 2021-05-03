@@ -91,7 +91,7 @@ header .navbar .header__right .cart {
 }
 
 #carousel {
-  background: url("../../img/cover.jpg");
+  background: url("../img/cover.jpg");
   height: 600px;
   background-size: cover;
 }
@@ -140,5 +140,33 @@ header .navbar .header__right .cart {
 
 .tab-pane {
   overflow: hidden;
+}
+
+.item__hover .best-seller {
+  background: yellow;
+  padding: 4px 12px 4px 8px;
+  -webkit-clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.6rem;
+}
+
+.item__hover .btn-signup {
+  background-color: #ec5252;
+  border-radius: 0;
+  color: white;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.item__hover .details li {
+  list-style: none;
+  display: inline;
+  font-size: 12px;
+}
+
+.item__hover .infor li {
+  margin-left: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

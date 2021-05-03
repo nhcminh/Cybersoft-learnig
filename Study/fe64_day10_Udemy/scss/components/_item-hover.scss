@@ -1,0 +1,16 @@
+.item__hover {
+    @include best-seller;
+    @include btn-signup;
+    .details {
+        li {
+            list-style: none;
+            display: inline;
+            font-size: 12px;
+        }
+    }
+    .infor {
+        li {
+            margin-left: 1rem;
+        }
+    }
+}
