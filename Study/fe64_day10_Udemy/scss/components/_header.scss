@@ -24,10 +24,15 @@ header {
                 white-space: nowrap;
             }
             .btn-login {
-                border: 1px solid black;
+                border: 1px solid #686f7a;
                 border-radius: 0;
                 text-transform: capitalize;
                 white-space: nowrap;
+                color: #686f7a;
+                &:hover {
+                    border-color: black;
+                    color: black;
+                }
             }
             @include btn-signup;
             .cart {

@@ -1,16 +1,53 @@
 .item__hover {
     @include best-seller;
     @include btn-signup;
+    color: #686f7a;
+    h3 {
+      a {
+        color: black;
+        font-size: 1.5rem;
+      }
+    }
+  
+    .category {
+      font-size: 0.8rem;
+      a {
+        @extend .category;
+      }
+    }
     .details {
-        li {
-            list-style: none;
-            display: inline;
-            font-size: 12px;
-        }
+      li {
+        list-style: none;
+        display: inline;
+        font-size: 12px;
+        margin-right: 4px;
+        color: #686f7a;
+      }
     }
     .infor {
-        li {
-            margin-left: 1rem;
-        }
+      li {
+        margin-left: 1rem;
+        color: #686f7a;
+      }
     }
-}
+    .col-md-12 {
+      div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        button {
+          width: 80%;
+          padding: 1rem 0;
+        }
+        i {
+          color: white;
+          // text-stroke: 1px #ec5252;
+          -webkit-text-stroke: 1px #ec5252;
+          font-size: 1.5rem;
+          &:hover {
+            color: #ec5252;
+          }
+        }
+      }
+    }
+  }

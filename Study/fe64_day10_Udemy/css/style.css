@@ -6,9 +6,33 @@
   font-size: 15px;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
   padding: 0;
+}
+
+.popover {
+  max-width: 350px !important;
+}
+
+.popover .popover-body {
+  padding: 0;
+}
+
+@media (min-width: 1440px) {
+  .conntainer {
+    min-width: 1410px;
+  }
+}
+
+button:focus {
+  outline: none;
 }
 
 header .navbar {
@@ -72,10 +96,16 @@ header .navbar .header__right a.nav-link {
 }
 
 header .navbar .header__right .btn-login {
-  border: 1px solid black;
+  border: 1px solid #686f7a;
   border-radius: 0;
   text-transform: capitalize;
   white-space: nowrap;
+  color: #686f7a;
+}
+
+header .navbar .header__right .btn-login:hover {
+  border-color: black;
+  color: black;
 }
 
 header .navbar .header__right .btn-signup {
@@ -84,6 +114,10 @@ header .navbar .header__right .btn-signup {
   color: white;
   text-transform: capitalize;
   white-space: nowrap;
+}
+
+header .navbar .header__right .btn-signup:hover {
+  background-color: #992337;
 }
 
 header .navbar .header__right .cart {
@@ -138,12 +172,116 @@ header .navbar .header__right .cart {
   font-size: 1.1rem;
 }
 
-.tab-pane {
+#discovery .col-xl-4 {
+  background-color: #f7f8fa;
+  color: #686f7a;
+  min-height: 350px;
+}
+
+#discovery .col-xl-4 h2 {
+  font-size: 1.4rem;
+}
+
+#discovery .col-md-10 .nav .nav-item .nav-link {
+  font: 100;
+}
+
+#discovery .col-md-10 #myTabContent .item .best-seller {
+  background: #f4c150;
+  padding: 4px 12px 4px 8px;
+  -webkit-clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.6rem;
+}
+
+#discovery .col-md-10 #myTabContent .item .best-seller {
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+
+#discovery .col-md-10 #myTabContent .item .card .card-body .card-title a {
+  font-size: 1rem;
+  color: black;
+  font-weight: bold;
+}
+
+#discovery .col-md-10 #myTabContent .item .card .card-body .card-title a div {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
+#discovery .col-md-10 #myTabContent .item .card .card-body .card-text {
+  font-size: 0.8rem;
+}
+
+#discovery .col-md-10 #myTabContent .item .card .card-body .rating {
+  margin-top: 1rem;
+}
+
+#discovery .col-md-10 #myTabContent .item .card .card-body .rating i {
+  color: #f4c150;
+}
+
+#discovery .col-md-10 #myTabContent .item .card .card-body .rating .total-rate {
+  color: #686f7a;
+  font-size: 0.8rem;
+}
+
+#discovery .col-md-10 #myTabContent .item .card .cost {
+  color: black;
+  text-align: right;
+  font-weight: bold;
+}
+
+#discovery .col-md-10 #myTabContent .item .card .cost .real-cost {
+  color: #686f7a;
+  text-decoration: line-through;
+  margin-right: 10px;
+  font-size: 0.8rem;
+}
+
+#discovery .col-md-10 #myTabContent .owl-nav {
+  position: absolute;
+  top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 105%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#discovery .col-md-10 #myTabContent .owl-nav .owl-prev {
+  visibility: hidden;
+}
+
+#discovery .col-md-10 #myTabContent .owl-nav .owl-next {
+  background: white;
+  -webkit-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 2px solid transparent;
+}
+
+#discovery .col-md-10 #myTabContent .owl-nav .owl-next span {
+  font-size: 2rem;
+  color: #007791;
+}
+
+.item__hover {
+  color: #686f7a;
+}
+
 .item__hover .best-seller {
-  background: yellow;
+  background: #f4c150;
   padding: 4px 12px 4px 8px;
   -webkit-clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
           clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
@@ -160,13 +298,56 @@ header .navbar .header__right .cart {
   white-space: nowrap;
 }
 
+.item__hover .btn-signup:hover {
+  background-color: #992337;
+}
+
+.item__hover h3 a {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.item__hover .category, .item__hover .category a {
+  font-size: 0.8rem;
+}
+
 .item__hover .details li {
   list-style: none;
   display: inline;
   font-size: 12px;
+  margin-right: 4px;
+  color: #686f7a;
 }
 
 .item__hover .infor li {
   margin-left: 1rem;
+  color: #686f7a;
+}
+
+.item__hover .col-md-12 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item__hover .col-md-12 div button {
+  width: 80%;
+  padding: 1rem 0;
+}
+
+.item__hover .col-md-12 div i {
+  color: white;
+  -webkit-text-stroke: 1px #ec5252;
+  font-size: 1.5rem;
+}
+
+.item__hover .col-md-12 div i:hover {
+  color: #ec5252;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,11 +1,32 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 15px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
 }
 
-h1,h2,h3,h4,h5,h6,p {
-    margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+.popover {
+  max-width: 350px !important;
+  .popover-body {
     padding: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .conntainer {
+    min-width: 1410px;
+  }
+}
+button:focus {
+  outline: none;
 }
