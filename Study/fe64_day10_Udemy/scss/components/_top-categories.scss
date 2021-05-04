@@ -1,0 +1,21 @@
+#top-categories {
+  .col-md-3 {
+    max-width: 22%;
+    box-shadow: 0 0 1px 1px rgba(20,23,28,.1),0 3px 1px 0 rgba(20,23,28,.1);
+    transition: all 0.5s;
+    a {
+      color: black;
+      display: block;
+      &:hover {
+          text-decoration: none;
+      }
+      i {
+          font-size: 2rem;
+      }
+      span {
+          margin-left: 10px;
+          vertical-align: super;
+      }
+    }
+  }
+}

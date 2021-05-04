@@ -1,0 +1,78 @@
+#discovery {
+  .container {
+    .col-xl-4 {
+      background-color: #f7f8fa;
+      color: #686f7a;
+      min-height: 350px;
+      h2 {
+        font-size: 1.2rem;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+    }
+    .col-md-9 {
+      #myTab {
+        border-bottom: 1px solid #dedfe0;
+        margin-bottom: 1rem;
+        flex-wrap: nowrap;
+        .nav-item {
+          .nav-link.active {
+            border-color: transparent;
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              height: 5px;
+              width: 100%;
+              background-color: #007791;
+            }
+          }
+          .nav-link {
+            font: 100;
+            height: 100%;
+            color: #495057;
+            position: relative;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            word-wrap: break-word;
+            &::after {
+              @extend .nav-link.active::after;
+              width: 0;
+            }
+            &:hover {
+              border-color: transparent;
+              color: #495057;
+            }
+            &:hover::after {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    @include myTabContent;
+  }
+.viewing {
+  .disabled {
+    visibility: visible !important;
+  }
+  p {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    color: #686f7a;
+  }
+}
+  .container-fluid {
+    background-color: #f2f3f5;
+    h3 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+    p {
+      color: #686f7a;
+    }
+  }
+}

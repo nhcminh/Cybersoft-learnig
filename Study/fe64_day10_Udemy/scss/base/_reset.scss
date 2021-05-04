@@ -23,8 +23,9 @@ p {
 }
 
 @media (min-width: 1440px) {
-  .conntainer {
-    min-width: 1410px;
+  .container {
+    max-width: 1405px;
+    width: 100%;
   }
 }
 button:focus {

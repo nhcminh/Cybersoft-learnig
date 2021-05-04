@@ -1,18 +1,43 @@
 $(".owl-one").owlCarousel({
-  loop: true,
-  dots:false,
-  nav:true,
+  dots: false,
+  nav: true,
   margin: 10,
-  responsive:{
+  responsive: {
     0: {
-      items: 3
+      items: 3,
     },
     1440: {
-      items:4
-    }
+      items: 4,
+    },
   },
 });
-
+$(".owl-two").owlCarousel({
+  loop:true,
+  dots: false,
+  nav: true,
+  margin: 10,
+  responsive: {
+    0: {
+      items: 4,
+    },
+    1200: {
+      items: 5,
+    },
+  },
+});
+$(".owl-three").owlCarousel({
+  dots: false,
+  nav: true,
+  margin: 10,
+  responsive: {
+    0: {
+      items: 2,
+    },
+    1000: {
+      items: 3,
+    },
+  },
+});
 // $(document).ready(function () {
 $('[data-toggle="popover"]').popover({
   animation: true,
@@ -29,3 +54,14 @@ $('[data-toggle="popover"]').popover({
 $('[data-toggle="popover"]').on("show.bs.popover", function () {
   $('[data-toggle="popover"]').popover("hide");
 });
+$(window).click(function () {
+  $('[data-toggle="popover"]').popover("hide");
+});
+
+$("#top-categories .col-md-3 a")
+  .on("mouseover", function () {
+    $(this).parent().css({ "box-shadow": "0 2px 8px 2px rgba(20,23,28,.15)" });
+  })
+  .on("mouseleave", function () {
+    $(this).parent().removeAttr("style");
+  });

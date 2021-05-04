@@ -1,0 +1,8 @@
+#feedback {
+    .item {
+        img {
+            border-radius: 50%;
+        }
+    }
+    @include owl-nav;
+}

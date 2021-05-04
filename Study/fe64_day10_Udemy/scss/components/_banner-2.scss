@@ -1,0 +1,23 @@
+#banner-2 {
+    &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 8px;
+        background: linear-gradient(-45deg, #ec5252 0%, #6e1a52 100%);
+      }
+  .container-fluid {
+    
+    .row {
+        padding: 1rem;
+        background: #29303b;
+        i{
+            font-size: 2rem;
+        }
+        .col-md-6 {
+            line-height: 3
+        }
+    }
+    @include btn-signup;
+  }
+}

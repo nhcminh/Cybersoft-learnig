@@ -1,48 +1,134 @@
 @mixin form {
-    .form-control {
-        border: none;
-        background-color: #e3e9ee;
-        border-radius: 0px;
-        font-size: 13px;
-        &:focus {
-            box-shadow: none;
-            border-color: #ced4da;
-        }
+  .form-control {
+    border: none;
+    background-color: #e3e9ee;
+    border-radius: 0px;
+    font-size: 13px;
+    &:focus {
+      box-shadow: none;
+      border-color: #ced4da;
     }
-    .input-group-text {
-        color: #ec5252;
-        background: #e3e9ee;
-        border-radius: 0;
-        border: none;
-        font-size: 13px;
-        &:hover {
-            background-color: #ec5252;
-            color: white;
-            cursor: pointer;
-        }
+  }
+  .input-group-text {
+    color: #ec5252;
+    background: #e3e9ee;
+    border-radius: 0;
+    border: none;
+    font-size: 13px;
+    &:hover {
+      background-color: #ec5252;
+      color: white;
+      cursor: pointer;
     }
+  }
 }
 
 @mixin best-seller {
-    .best-seller {
-        background: #f4c150;
-        padding: 4px 12px 4px 8px;
-        clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 0.6rem;
-    }
+  .best-seller {
+    background: #f4c150;
+    padding: 4px 12px 4px 8px;
+    clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.6rem;
+  }
 }
 
 @mixin btn-signup {
-    .btn-signup {
-        background-color: #ec5252;
-        border-radius: 0;
-        color: white;
-        text-transform: capitalize;
-        white-space: nowrap;
-        &:hover {
-            background-color: #992337;
-        }
+  .btn-signup {
+    background-color: #ec5252;
+    border-radius: 0;
+    color: white;
+    text-transform: capitalize;
+    white-space: nowrap;
+    &:hover {
+      background-color: #992337;
     }
+  }
+}
+@mixin owl-nav {
+  .owl-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    width: 106%;
+    left: -3%;
+    justify-content: space-between;
+    .owl-prev {
+      background: white;
+      box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.15);
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      border: 2px solid transparent;
+      span {
+        font-size: 2rem;
+        color: #007791;
+      }
+    }
+    .owl-next {
+      @extend .owl-prev;
+    }
+    .disabled {
+        visibility: hidden;
+      }
+  }
+}
+@mixin myTabContent {
+//   #myTabContent {
+    .item {
+      @include best-seller;
+      .best-seller {
+        position: absolute;
+        top: 20px;
+        left: 0;
+      }
+
+      .card {
+        .card-body {
+          .card-title {
+            a {
+              font-size: 1rem;
+              color: black;
+              font-weight: bold;
+              div {
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+              }
+            }
+          }
+          .card-text {
+            font-size: 0.8rem;
+          }
+          .rating {
+            margin-top: 1rem;
+            i {
+              color: #f4c150;
+              font-size: 0.8rem;
+              letter-spacing: 0;
+            }
+            .total-rate {
+              color: #686f7a;
+              font-size: 0.8rem;
+            }
+          }
+        }
+        .cost {
+          color: black;
+          text-align: right;
+          font-weight: bold;
+          .real-cost {
+            color: #686f7a;
+            text-decoration: line-through;
+            margin-right: 10px;
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+    @include owl-nav;
+//   }
 }
