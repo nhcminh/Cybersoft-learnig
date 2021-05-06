@@ -281,6 +281,10 @@ header #UfB:hover, header #ToU:hover {
   font-size: 1.1rem;
 }
 
+#banner i {
+  font-size: 3rem;
+}
+
 #discovery .container .col-xl-4 {
   background-color: #f7f8fa;
   color: #686f7a;
