@@ -16,6 +16,12 @@
         border-bottom: 1px solid #dedfe0;
         margin-bottom: 1rem;
         flex-wrap: nowrap;
+        overflow: auto;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
         .nav-item {
           .nav-link.active {
             border-color: transparent;
@@ -54,16 +60,16 @@
     }
     @include myTabContent;
   }
-.viewing {
-  .disabled {
-    visibility: visible !important;
+  .viewing {
+    .disabled {
+      visibility: visible !important;
+    }
+    p {
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+      color: #686f7a;
+    }
   }
-  p {
-    margin-bottom: 1rem;
-    font-size: 1.4rem;
-    color: #686f7a;
-  }
-}
   .container-fluid {
     background-color: #f2f3f5;
     h3 {

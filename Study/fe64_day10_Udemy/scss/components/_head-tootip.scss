@@ -1,0 +1,21 @@
+.head_more {
+  width: 400px;
+  background: #fff;
+  text-align: center;
+  color: #505763;
+  transform: translateX(-100px);
+  &::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    position: absolute;
+    background-color: white;
+    top: -5px;
+    
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-color: #cecece;
+  }
+}
+

@@ -1,0 +1,34 @@
+#footer {
+    li {
+        list-style: none;
+        margin-bottom: 0.5rem;
+    }
+    a {
+        font-size: 0.8rem;
+        color: #007791;
+        &:hover {
+            color: #003845;
+            text-decoration: none;
+        }
+    }
+    h4 {
+        a {
+            font-size: 1rem;
+            font-weight: 700;
+        }
+    }
+    img {
+        max-width: 100%;
+    }
+    .copyright {
+        position: relative;
+        &::after {
+            content: "";
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            height: 8px;
+            background: #ec5252;
+        }
+    }
+}

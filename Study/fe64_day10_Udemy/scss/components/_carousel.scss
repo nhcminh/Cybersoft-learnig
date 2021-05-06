@@ -1,12 +1,31 @@
 #carousel {
-    background: url('../img/cover.jpg');
+    background: url('../img/cover.jpg') rgba(0, 0, 0, 0.4);
     height: 600px;
     background-size: cover;
+    background-blend-mode: multiply;
+    background-position: right;
     @include form;
     .form-control {
         background-color: white;
     }
     .input-group-text {
         @extend .form-control;
+    }
+}
+@media (max-width: 430px) {
+    #carousel {
+        height: 300px;
+        h1 {
+            font-size: 1.5rem;
+            max-width: 50%;
+        }
+        p{
+            max-width: 50%;
+            font-size: 1.2rem;
+        }
+        .form-control {
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
     }
 }

@@ -11,7 +11,10 @@ $(".owl-one").owlCarousel({
   margin: 10,
   responsive: {
     0: {
-      items: 3,
+      items: 1,
+    },
+    430: {
+      items: 3
     },
     1440: {
       items: 4,
@@ -25,6 +28,9 @@ $(".owl-two").owlCarousel({
   margin: 10,
   responsive: {
     0: {
+      items: 1,
+    },
+    430: {
       items: 4,
     },
     1200: {
@@ -33,17 +39,69 @@ $(".owl-two").owlCarousel({
   },
 });
 $(".owl-three").owlCarousel({
-  dots: false,
-  nav: true,
+  nav: false,
   margin: 10,
   responsive: {
     0: {
+      items: 1,
+      nav: false,
+      dots: true,
+    },
+    430: {
       items: 2,
+      nav: true,
+      dots: false,
     },
     1000: {
       items: 3,
+      nav: true,
+      dots: false,
     },
   },
+});
+$(document).ready(function () {
+  $('.dropdown-menu a.dropdown-toggle').on('mouseover', function (e) {
+    var $el = $(this);
+
+    $el.toggleClass('active-dropdown');
+    var $parent = $(this).offsetParent(".dropdown-menu");
+    if (!$(this).next().hasClass('show')) {
+      $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+    }
+    var $subMenu = $(this).next(".dropdown-menu");
+    $subMenu.toggleClass('show');
+
+    $(this).parent("li").toggleClass('show');
+
+    $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+      $('.dropdown-menu .show').removeClass("show");
+      $el.removeClass('active-dropdown');
+    });
+
+    if (!$parent.parent().hasClass('navbar-nav')) {
+      $el.next().css({ "top": "-3px", "left": $parent.outerWidth() - 4 });
+    }
+
+    return false;
+  });
+  $('#ToU').tooltip({
+    title: '<div class="head_more p-4 shadow border"><div class="container"><div class="row"><div class="col-md-12"><p>Turn what you know into an opportunity and reach millions around the world.</p><a href="">Learn more</a></div></div></div></div>',
+    html: true,
+    placement: 'bottom',
+    delay: {show:200, hide:3000}
+  });
+  $('#UfB').tooltip({
+    title: '<div class="head_more p-4 shadow border"><div class="container"><div class="row"><div class="col-md-12"><p>Get your team access to 4,000+ top Udemy courses anytime, anywhere</p><a href="" > Try Udemy for Business</a></div ></div ></div ></div > ',
+    html: true,
+    placement: 'bottom',
+    delay: {show:200, hide:3000}
+  })
+  $('[data-toggle="tooltip"]').on("show.bs.tooltip", function () {
+    $('[data-toggle="tooltip"]').tooltip("hide");
+  });
+  $(window).click(function () {
+    $('[data-toggle="tooltip"]').tooltip("hide");
+  });
 });
 
 $('[data-toggle="popover"]').popover({
@@ -72,3 +130,15 @@ $("#top-categories .col-md-3 a")
   .on("mouseleave", function () {
     $(this).parent().removeAttr("style");
   });
+
+
+$('#UfB').on('mouseover', function () {
+  $(this).siblings().css({ 'display': 'block' }).on('mouseleave', function () {
+    $(this).css({ 'display': 'none' });
+  })
+})
+$('#ToU').on('mouseover', function () {
+  $(this).siblings().css({ 'display': 'block' }).on('mouseleave', function () {
+    $(this).css({ 'display': 'none' })
+  })
+})
