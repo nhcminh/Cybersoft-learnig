@@ -10,6 +10,9 @@
         .owl-nav{
             display: none;
         }
+        .btnn-signup {
+            white-space: normal
+        }
     }
     @include btn-signup;
     button {

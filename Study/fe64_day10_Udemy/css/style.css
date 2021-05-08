@@ -658,6 +658,9 @@ header #UfB:hover, header #ToU:hover {
   #feedback .owl-nav {
     display: none;
   }
+  #feedback .btnn-signup {
+    white-space: normal;
+  }
 }
 
 #feedback .btn-signup {
