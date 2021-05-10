@@ -1,0 +1,3 @@
+function danhSach() {
+    this.students = [];
+}
