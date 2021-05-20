@@ -35,9 +35,7 @@
 
 var sinhVien = new sinhVien();
 var danhsach = new danhSach();
-var _td = function() { var td = document.createElement("td"); return td; }
-var _tr = function() { var tr = document.createElement("tr"); return tr; }
-document.querySelector("#btnXacNhan").onclick = function() {
+document.querySelector("#btnXacNhan").onclick = function () {
     sinhVien.maSinhVien = document.querySelector("#maSinhVien").value;
     sinhVien.tenSinhVien = document.querySelector("#tenSinhVien").value;
     sinhVien.emailSinhVien = document.querySelector("#emailSinhVien").value;
@@ -48,52 +46,42 @@ document.querySelector("#btnXacNhan").onclick = function() {
     sinhVien.diemHoa = document.querySelector("#diemHoa").value;
     sinhVien.loaiSinhVien = document.querySelector("#loaiSinhVien").value;
     //Xử lý hiển thị
-    document.querySelector("#txtMaSinhVien").innerHTML = sinhVien.maSinhVien;
+    var maSV = document.querySelector("#txtMaSinhVien").innerHTML = sinhVien.maSinhVien;
     document.querySelector("#txtTenSinhVien").innerHTML = sinhVien.tenSinhVien;
     document.querySelector("#txtEmailSinhVien").innerHTML = sinhVien.tenSinhVien;
     document.querySelector("#txtSdtSinhVien").innerHTML = sinhVien.tenSinhVien;
     document.querySelector("#txtLoaiSinhVien").innerHTML = sinhVien.loaiSinhVien;
-    document.querySelector(
-        "#txtDiemTrungBinh"
-    ).innerHTML = sinhVien.tinhDiemTrungBinh();
+    document.querySelector("#txtDiemTrungBinh").innerHTML = sinhVien.tinhDiemTrungBinh();
     document.querySelector("#txtXepLoai").innerHTML = sinhVien.xepLoaiSinhVien();
-    danhsach.students.push(sinhVien);
-    // _td = document.createElement("td");
-    // _tr = document.createElement("tr");
-    document.querySelector("#tblSinhVien").innerHTML = "";
-    // for (let i = 0; i < danhsach.students.length; i++) {
-    _td().innerHTML = _td().innerHTML + danhsach.students[0].maSinhVien;
-    _tr().appendChild(_td());
-    // document.querySelector("#tblSinhVien").appendChild(_tr);
-    _td().innerHTML = _td().innerHTML + danhsach.students[0].tenSinhVien;
-    _tr().appendChild(_td());
-    _td().innerHTML = _td().innerHTML + danhsach.students[0].loaiSinhVien;
-    _tr().appendChild(_td());
-    _td().innerHTML = _td().innerHTML + danhsach.students[0].tinhDiemTrungBinh();
-    _tr().appendChild(_td());
-    _td().innerHTML = _td().innerHTML + danhsach.students[0].xepLoaiSinhVien();
-    _tr().appendChild(_td());
-    document.querySelector("#tblSinhVien").appendChild(_tr());
-    // }
-    //   _tr.appendChild(_td);
-    // var danhsach = new danhSach();
-    // danhsach.students.forEach(
-    //     (student) =>
-    //     function() {
-    //         if (student != undefined) {
-    //             _td.innerHTML = student.maSinhVien;
-    //             console(student.maSinhVien);
-    // _tr.appendChild(_td);
-    // _td.innerHTML = student.tenSinhVien;
-    // _tr.appendChild(_td);
-    // _td.innerHTML = student.loaiSinhVien;
-    // _tr.appendChild(_td);
-    // _td.innerHTML = student.tinhDiemTrungBinh();
-    // _tr.appendChild(_td);
-    // _td.innerHTML = student.xepLoaiSinhVien();
-    // _tr.appendChild(_td);
-    //             document.querySelector("#tblSinhVien").appendChild(_tr);
-    //         }
-    //     }
-    // );
+    sinhVien.diemTB = sinhVien.tinhDiemTrungBinh();
+    sinhVien.xepLoai = sinhVien.xepLoaiSinhVien();
+    danhsach.students.push(JSON.stringify(sinhVien));
+    while (document.getElementById('tblSinhVien').hasChildNodes()) {
+        let i = 0;
+        document.getElementById('tblSinhVien').removeChild(document.getElementById('tblSinhVien').childNodes[i]);
+        i++;
+    }
+    danhsach.students.forEach((student, index) => {
+        student = JSON.parse(student);
+        var __id = document.createElement('td');
+        var __name = document.createElement('td');
+        var __grade = document.createElement('td');
+        var __class = document.createElement('td');
+        var __type = document.createElement('td');
+        var _tr = document.createElement('tr');
+        __id.innerHTML = student.maSinhVien;
+        __name.innerHTML = student.tenSinhVien;
+        __grade.innerHTML = student.diemTB;
+        __class.innerHTML = student.xepLoai;
+        __type.innerHTML = student.loaiSinhVien;
+        _tr.appendChild(__id);
+        _tr.appendChild(__name);
+        _tr.appendChild(__type);
+        _tr.appendChild(__grade);
+        _tr.appendChild(__class);
+        document.querySelector("#tblSinhVien").appendChild(_tr);
+        console.log(index)
+    });
+
+
 };

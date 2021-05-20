@@ -8,6 +8,8 @@ function sinhVien() {
     this.diemLy = '';
     this.diemHoa = '';
     this.diemRenLuyen = '';
+    this.diemTB = '';
+    this.xepLoai = '';
     this.tinhDiemTrungBinh = function() {
         //Truy xuất thuộc tính trong phương thức 
         var diemTrungBinh = (Number(this.diemToan) + Number(this.diemLy) + Number(this.diemHoa)) / 3;

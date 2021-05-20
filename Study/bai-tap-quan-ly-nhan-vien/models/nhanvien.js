@@ -1,14 +1,16 @@
 function NhanVien() {
     this.id = "";
     this.name = "";
-    this.position = "";
     this.baseSallary = "";
     this.workingHour = "";
-    this.sallary = function() {
+    this.position = "";
+    this.sallary = '';
+    this.performance = '';
+    this.sallaryCalc = function() {
         var tong = this.baseSallary * document.querySelector("#loaiNhanVien").value;
         return tong;
     };
-    this.performance = function() {
+    this.performanceCacl = function() {
         if (this.workingHour > 120) {
             return "Nhân Viên Xuất Sắc";
         } else if (this.workingHour > 100) {
