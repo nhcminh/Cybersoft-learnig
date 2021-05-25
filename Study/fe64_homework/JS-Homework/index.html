@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>
+        JS Exercise
+    </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        li {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <button id="clear" class="btn btn-outline-warning float-right">Clear</button>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#q1">Question 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#q2">Question 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#q3">Question 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#q4">Question 4</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#q5">Question 5</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#q6">Question 6</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#q7">Question 7</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#q8">Question 8</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#q9">Question 9</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#q10">Question 10</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane container active" id="q1">
+                <p>In một bảng số từ 1-100 thỏa mãn điều kiện: (gợi ý dùng 2 vòng for lồng nhau, để ý chỗ bước nhảy) <br>• Bảng số gồm 10 hàng và 10 cột <br>• Các giá trị trong hàng là liên tiếp nhau <br>• Các giá trị trong cột hơn kém nhau 10</p>
+                <button class="btn btn-primary" id="showTableBtn">Bảng Số Nguyên</button>
+                <table class="table">
+                    <tbody id="tbl">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane container fade" id="q2">
+                <p>Viết function nhận vào tham số là một mảng số nguyên,tìm và in ra các số nguyên tố trong mảng</p>
+                <input type="text" id="input2" placeholder="Nhập vào mảng hoặc số nguyên">
+                <button class="btn btn-primary" id="primeNumberBtn">Số Nguyên Tố</button>
+                <p id="result2"></p>
+            </div>
+            <div class="tab-pane container fade" id="q3">
+                <p>Viết function nhận vào tham số n, tính S=(2+3+4...+n)+2n</p>
+                <input type="text" id="input3" placeholder="Nhập vào số nguyên">
+                <button class="btn btn-primary" id="randomNumberBtn">tính S=(2+3+4...+n)+2n</button>
+                <p id="result3"></p>
+            </div>
+            <div class="tab-pane container fade" id="q4">
+                <p>Viết function nhận vào tham số n, tính số lượng ước số của n</p>
+                <input type="text" id="input4" placeholder="Nhập số nguyên">
+                <button class="btn btn-primary" id="divisorNumberBtn">tính số lượng ước số của n</button>
+                <p id="result4"></p>
+            </div>
+            <div class="tab-pane container fade" id="q5">
+                <p>Viết chương trình tìm số đảo ngược của 1 số nguyên dương n nhập từ bàn phím.Vd :1234 => 4321</p>
+                <input type="text" id="input5" placeholder="Nhập vào số nguyên">
+                <button class="btn btn-primary" id="reverseBtn">Đảo ngược số</button>
+                <p id="result5"></p>
+            </div>
+            <div class="tab-pane container fade" id="q6">
+                <p>Tìm x nguyên dương lớn nhất, biết 1+2+3+...+x ≤100</p>
+                <button class="btn btn-primary" id="findMaxXBtn">Tìm X lớn nhất</button>
+                <p id="result6"></p>
+            </div>
+            <div class="tab-pane container fade" id="q7">
+                <p>Viết function nhận vào số n, in ra bảng cửu chương tương ứng với số đó</p>
+                <input type="text" id="input7" placeholder="Nhập vào số nguyên n">
+                <button class="btn btn-primary" id="multiTableBtn">Bảng Cửu Chương</button>
+                <p id="result7"></p>
+            </div>
+            <div class="tab-pane container fade" id="q8">
+                <p>Viết hàm chia bài cho 4 người chơi Cho 4 mảng, đại diện cho 4 người chơi<br> var players = [ [], [], [], [] ]; <br>Và 1 mảng bài: <br>var cards = ["4K", "KH", "5C", "KA", "QH", "KD", "2H", "10S", "AS", "7H", "9K", "10D"] <br>Yêu cầu viết
+                    code để chia cho mỗi player 3 lá theo luật, chia lần lượt mỗi người 1 lá <br>Kết quả :<br>var player1 = ["4K","QH","AS"]; <br>var player2 = ["KH", "KD","7H"]; <br>var player3 = ["5C","2H","9K"]; <br>var player4 = ["KA","10S","10D"]</p>
+                <button class="btn btn-primary" id="playCardBtn">Chia bài</button>
+                <p id="result8"></p>
+            </div>
+            <div class="tab-pane container fade" id="q9">
+                <p>Vừa gà vừa chó, bó lại cho tròn, 36 con, 100 chân chẵn Một câu đố dân gian nổi tiếng chắc hẳn tất cả các bạn đều biết. Và bạn có thể cũng đã biết đáp án của câu đố trên là 22 con gà và 14 con chó. Tuy nhiên, thầy giáo của Hiếu lại bắt
+                    anh ấy phải giải bài tập tổng quát: "Tìm số gà, số chó khi số tổng số con là m và tổng số chân là n ". Bạn hãy giúp Hiếu giải bài toán này nhé</p>
+                <p><input placeholder="Input Total" type="text" name="" id="total">
+                    <input placeholder="Input Leg" type="text" name="" id="leg"> <button class="btn btn-primary" id="calcBtn">Tìm  số chó gà</button></p>
+                <p id="result9"></p>
+            </div>
+            <div class="tab-pane container fade" id="q10">
+                <p>Nhập vào số giờ và số phút => góc lệch giữa kim giờ và kim phút. Vd 6:10</p>
+                <p><input placeholder="Input Hour" type="text" name="" id="hour">
+                    <input placeholder="Input Minute" type="text" name="" id="minute"> <button class="btn btn-primary" id="calcTimeBtn">Tính góc lệch</button></p>
+                <p id="result10"></p>
+            </div>
+        </div>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
