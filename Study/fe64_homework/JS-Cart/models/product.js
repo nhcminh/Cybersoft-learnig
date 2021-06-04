@@ -37,7 +37,7 @@ export class Product {
         <div class="card-body">
             <h4 class="card-title">${this.name}</h4>
             <p class="card-text">${this.desc}</p>
-            <button class="btn btn-success btn-add" id="${this.id}">Add to cart</button>
+            <button class="btn btn-success btn-add" onclick="addCart(${this.id})">Add to cart</button>
         </div>
     </div></div>`;
 

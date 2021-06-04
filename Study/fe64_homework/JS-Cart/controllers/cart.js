@@ -5,14 +5,14 @@ import { cartRender } from "../views/cartRender.js";
 export let cart = [];
 export const addToCart = (id_param) => {
     let { id, name, price, image } = products.find((item) => {
-        if (item.id === id_param) return item;
+        if (item.id == id_param) return item;
     });
     if (cart.length < 1) {
         cart.push(new CartItem(id, name, price, image, 1));
     } else {
         let condition = true;
         cart.find((item) => {
-            if (item.id === id_param) {
+            if (item.id == id_param) {
                 item.quantity += 1;
                 condition = false;
             }
@@ -21,43 +21,34 @@ export const addToCart = (id_param) => {
             cart.push(new CartItem(id, name, price, image, 1));
         }
     }
-
     cartRender();
-    storeData();
     console.log(cart);
 };
 export const increaseQuantity = (id) => {
     for (const item of cart) {
         if (item.id == id) item.quantity += 1;
     }
-
     cartRender();
-    storeData();
 };
 export const decreaseQuantity = (id) => {
     for (const item of cart) {
         if (item.id == id)
             if (item.quantity > 1) item.quantity -= 1;
     }
-
     cartRender();
-    storeData();
 };
 export const removeCartItem = (id) => {
     for (const item of cart) {
         if (item.id == id) cart.pop(item);
     }
-
     cartRender();
-    storeData();
 };
 export const checkOut = () => {
     cart = [];
     cartRender();
-    storeData();
 };
 
-const storeData = () => {
+export const storeData = () => {
     localStorage.setItem("cart", JSON.stringify(cart));
 };
 export const getData = () => {
