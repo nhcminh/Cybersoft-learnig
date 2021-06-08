@@ -156,7 +156,7 @@ document.querySelector("#calcTimeBtn").addEventListener("click", function () {
     var result = document.querySelector("#result10");
     var hour = document.getElementById("hour").value;
     var minute = document.getElementById("minute").value;
-    var degree = Math.abs(hour * 5 - minute) * 6;
+    var degree = minute * 6 - 0.5 * (1 * hour + 10);
     result.innerHTML = `<p>góc lệch giữa kim giờ và kim phút: ${degree} độ</p>`;
 });
 

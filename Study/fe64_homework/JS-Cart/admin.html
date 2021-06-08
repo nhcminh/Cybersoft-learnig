@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">New Product</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <form id="modifyForm">
+                        <label for="name">Tên</label>
+                        <input class="form-control" type="text" name="name">
+                        <label for="price">Giá</label>
+                        <input class="form-control" type="text" name="price">
+                        <label for="screen">Màn hình</label>
+                        <input class="form-control" type="text" name="screen">
+                        <label for="backCamera">Camera Sau</label>
+                        <input class="form-control" type="text" name="backCamera">
+                        <label for="frontCamera">Camera Trước</label>
+                        <input class="form-control" type="text" name="frontCamera">
+                        <label for="image">Đường dẫn hình ảnh</label>
+                        <input class="form-control" type="text" name="image">
+                        <label for="desc">Mô tả</label>
+                        <input class="form-control" type="text" name="desc">
+                        <label for="type">Loại</label>
+                        <select name="type">
+                        <option value="iphone">iPhone</option>
+                        <option value="samsung">Samsung</option>
+                    </select>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button class="btn btn-info" id="btnAdd">Thêm Sản Phẩm</button>
+                    <button id="btnChange" class="btn btn-info" disabled>Sửa Sản Phẩm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 table-responsive">
+                <h1 class="text-center">Admin Page</h1>
+                <p class="d-flex justify-content-between">
+                    <a class="text-left" href="index.html">Cart page -></a>
+                    <!-- Button trigger modal -->
+                    <button id="btnPopUp" type="button" class="btn btn-primary btn-lg ml-auto" data-toggle="modal" data-target="#modelId">
+                    Thêm Sản Phẩm
+                </button>
+                </p>
+                <table class="table table-bordered table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Tên</th>
+                            <th>Giá</th>
+                            <th>Màn hình</th>
+                            <th>Camera Sau</th>
+                            <th>Camera Trước</th>
+                            <th>Đường dẫn hình ảnh</th>
+                            <th>Mô tả</th>
+                            <th>Loại</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tblAdmin">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="./controllers/admin.js" type="module"></script>
+</body>
+
+</html>

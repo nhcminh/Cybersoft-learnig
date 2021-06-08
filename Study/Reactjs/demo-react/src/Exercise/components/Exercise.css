@@ -1,0 +1,17 @@
+header {
+  background-color: red;
+}
+section {
+  background-color: yellow;
+  flex-basis: 70%;
+}
+nav {
+  background-color: blue;
+  flex-basis: 30%;
+}
+footer {
+  background-color: green;
+}
+h1 {
+  margin-bottom: 0 !important;
+}
