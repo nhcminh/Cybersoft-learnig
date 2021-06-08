@@ -1,4 +1,4 @@
-document.querySelector("#showTableBtn").addEventListener("click", function() {
+document.querySelector("#showTableBtn").addEventListener("click", function () {
     var content = "";
     for (let index = 0; index < 10; index++) {
         content += `<tr>`;
@@ -12,7 +12,7 @@ document.querySelector("#showTableBtn").addEventListener("click", function() {
 
 document
     .querySelector("#primeNumberBtn")
-    .addEventListener("click", function() {
+    .addEventListener("click", function () {
         var str = document.querySelector("#input2").value;
         var primeNumberArr = str.split(" ");
         primeNumberArr = primeNumberArr.toString();
@@ -21,22 +21,25 @@ document
         var mess = "Prime Number is: ";
 
         for (let index = 0; index < primeNumberArr.length; index++) {
-            if (checkPrime(primeNumberArr[index])) {
+            if (primeNumberArr[index] == 1) mess += primeNumberArr[index] + " ";
+            else if (checkPrime(primeNumberArr[index])) {
                 mess += primeNumberArr[index] + " ";
             }
         }
         result.innerHTML = mess;
 
         function checkPrime(num) {
-            for (var i = 2; i < num; i++)
+            for (var i = 2; i < num; i++) {
                 if (num % i === 0) return false;
+            }
+
             return num > 1;
         }
     });
 
 document
     .querySelector("#randomNumberBtn")
-    .addEventListener("click", function() {
+    .addEventListener("click", function () {
         var num = document.querySelector("#input3").value;
         var result = document.querySelector("#result3");
         var mess = "SUM is: ";
@@ -53,7 +56,7 @@ document
     });
 document
     .querySelector("#divisorNumberBtn")
-    .addEventListener("click", function() {
+    .addEventListener("click", function () {
         var num = document.querySelector("#input4").value;
         var result = document.querySelector("#result4");
         var mess = "Divisors of " + num + " are: ";
@@ -66,7 +69,7 @@ document
             return mess;
         }
     });
-document.querySelector("#reverseBtn").addEventListener("click", function() {
+document.querySelector("#reverseBtn").addEventListener("click", function () {
     var num = document.querySelector("#input5").value;
     var result = document.querySelector("#result5");
     var mess = "Reverse number of " + num + " is: " + reverseNum(num);
@@ -81,19 +84,20 @@ document.querySelector("#reverseBtn").addEventListener("click", function() {
         return revNum;
     }
 });
-document.querySelector("#findMaxXBtn").addEventListener("click", function() {
+document.querySelector("#findMaxXBtn").addEventListener("click", function () {
     var result = document.querySelector("#result6");
     var mess = "Max x is: ";
     var sum = 0;
     var x = 0;
     while (sum <= 100) {
         sum += x;
+        if (sum > 100) { x -= 1; break; }
         x++;
     }
     mess += x;
     result.innerHTML = mess;
 });
-document.querySelector("#multiTableBtn").addEventListener("click", function() {
+document.querySelector("#multiTableBtn").addEventListener("click", function () {
     var num = document.querySelector("#input7").value;
     var result = document.querySelector("#result7");
     var mess = `<h4>Multiplication Table</h4>`;
@@ -105,7 +109,7 @@ document.querySelector("#multiTableBtn").addEventListener("click", function() {
     }
     result.innerHTML = mess;
 });
-document.querySelector("#playCardBtn").addEventListener("click", function() {
+document.querySelector("#playCardBtn").addEventListener("click", function () {
     var result = document.querySelector("#result8");
     var mess = ``;
     var players = [
@@ -133,14 +137,13 @@ document.querySelector("#playCardBtn").addEventListener("click", function() {
             players[index].push(cards[index2]);
             index2 += 3;
         }
-        mess += `<p>Player ${index + 1}: [${players[index][0]}][${
-      players[index][1]
-    }][${players[index][2]}]</p>`;
+        mess += `<p>Player ${index + 1}: [${players[index][0]}][${players[index][1]
+            }][${players[index][2]}]</p>`;
     }
     result.innerHTML = mess;
 });
 
-document.querySelector("#calcBtn").addEventListener("click", function() {
+document.querySelector("#calcBtn").addEventListener("click", function () {
     var result = document.querySelector("#result9");
     var total = document.getElementById("total").value;
     var leg = document.getElementById("leg").value;
@@ -149,16 +152,16 @@ document.querySelector("#calcBtn").addEventListener("click", function() {
     result.innerHTML = `<p>Dog: ${dog}</p><p>Chicken: ${chicken} </p>`;
 });
 
-document.querySelector("#calcTimeBtn").addEventListener("click", function() {
+document.querySelector("#calcTimeBtn").addEventListener("click", function () {
     var result = document.querySelector("#result10");
     var hour = document.getElementById("hour").value;
     var minute = document.getElementById("minute").value;
-    var degree = (hour * 5 - minute) * 6;
+    var degree = Math.abs(hour * 5 - minute) * 6;
     result.innerHTML = `<p>góc lệch giữa kim giờ và kim phút: ${degree} độ</p>`;
 });
 
 
 
-document.querySelector('#clear').addEventListener('click', function() {
+document.querySelector('#clear').addEventListener('click', function () {
     location.reload();
 })

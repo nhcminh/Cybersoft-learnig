@@ -21,12 +21,12 @@
                     <h3 class="text-center bg-dark text-white py-3">Quản lý nhân viên</h3>
                     <div class="form-group">
                         <p>Mã nhân viên</p>
-                        <input class="form-control" id="maNhanVien" />
+                        <input class="form-control" id="maNhanVien" name="id"/>
                         <p id="unvalid_id" class="d-none alert alert-danger"></p>
                     </div>
                     <div class="form-group">
                         <p>Tên nhân viên</p>
-                        <input class="form-control" id="tenNhanVien" />
+                        <input class="form-control" id="tenNhanVien" name="name"/>
                         <p id="unvalid_name" class="d-none alert alert-danger"></p>
 
                     </div>
@@ -42,7 +42,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <p>Lương Cơ Bản</p>
-                                <input class="form-control" id="luongCoBan" />
+                                <input class="form-control" id="luongCoBan" name="baseSallary"/>
                                 <p id="unvalid_baseSallary" class="d-none alert alert-danger"></p>
 
                             </div>
@@ -50,13 +50,13 @@
                     </div>
                     <div class="form-group">
                         <p>Số Giờ làm trong tháng</p>
-                        <input class="form-control" id="gioLam" />
+                        <input class="form-control" id="gioLam" name="workingHour"/>
                         <p id="unvalid_workingHour" class="d-none alert alert-danger"></p>
 
                     </div>
                     <div class="form-group text-right">
-                        <button id="btnXacNhan" class="btn btn-success active" type="submit">Thêm Nhân Viên</button>
-                        <button id="btnLuu" class="btn btn-primary" type="submit" disabled>Lưu Thông Tin</button>
+                        <button id="btnXacNhan" class="btn btn-success active" type="button">Thêm Nhân Viên</button>
+                        <button id="btnLuu" class="btn btn-primary" type="button" disabled>Lưu Thông Tin</button>
                     </div>
                 </div>
             </form>
@@ -111,7 +111,7 @@
     <script src="./models/nhanvien.js"></script>
     <script src="./models/validation.js"></script>
     <!--Controller-->
-    <script src="./controllers/index.js"></script>
+    <script src="./controllers/indexES6.js"></script>
 </body>
 
 
