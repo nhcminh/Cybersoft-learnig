@@ -34,6 +34,7 @@ export const decreaseQuantity = (id) => {
     for (const item of cart) {
         if (item.id == id)
             if (item.quantity > 1) item.quantity -= 1;
+            else removeCartItem(id);
     }
     cartRender();
 };
@@ -55,6 +56,10 @@ export const getData = () => {
     if (localStorage.getItem("cart"))
         cart = JSON.parse(localStorage.getItem("cart"));
 };
+
+
+
+//          JSON Object
 // let cart = {};
 // export const addToCart = (id) => {
 // if (Object.keys(cart).length == 0 || !isExist(id)) {

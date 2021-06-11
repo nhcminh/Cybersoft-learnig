@@ -15,27 +15,24 @@ export const getApi = async() => {
 };
 export const newProductApi = async(product) => {
     try {
-        let res = await axios({
+        await axios({
             url: "https://5bd2959ac8f9e400130cb7e9.mockapi.io/api/products",
             method: "post",
             data: product,
         });
         await getApi();
         render();
-        console.log(res);
     } catch (err) {
-        console.log(err);
         throw err;
     }
 };
 export const delProductApi = async(id) => {
     try {
-        let result = await axios({
+        await axios({
             url: "https://5bd2959ac8f9e400130cb7e9.mockapi.io/api/products/" +
                 id,
             method: "delete",
         });
-        console.log(result.statusText);
         await getApi();
         render();
     } catch (e) {
@@ -44,14 +41,13 @@ export const delProductApi = async(id) => {
 }
 export const modifyProduct = async(id, product) => {
     try {
-        let res = await axios({
+        await axios({
             url: `https://5bd2959ac8f9e400130cb7e9.mockapi.io/api/products/${id}`,
             method: "put",
             data: product,
         });
         await getApi();
         render();
-        console.log(res);
     } catch (err) {
         console.log(err);
     }

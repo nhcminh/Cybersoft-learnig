@@ -15,8 +15,8 @@ export const cartRender = () => {
             <td>${item.name}</td>
             <td>${item.price}</td>
             <td>${item.quantity}
-                <button class="btn btn-dark btn-increase mx-1" style="padding: 2px 6px" onclick="increase(${item.id})">+</button>
-                <button class="btn btn-dark btn-decrease" style="padding: 2px 8px" onclick="decrease(${item.id})">-</button>
+                <button class="btn btn-dark btn-increase mx-1" style="padding: 2px 8px" onclick="decrease(${item.id})">-</button>
+                <button class="btn btn-dark btn-decrease" style="padding: 2px 6px" onclick="increase(${item.id})">+</button>
             </td>
             <td>${item.price * item.quantity}$</td>
             <td>
