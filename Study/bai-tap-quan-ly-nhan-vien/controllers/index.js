@@ -142,11 +142,11 @@ function layStorage() {
 }
 layStorage();
 // function renderTable() {
-//     while (document.getElementById('tblNhanVien').hasChildNodes()) {
-//         let i = 0;
-//         document.getElementById('tblNhanVien').removeChild(document.getElementById('tblNhanVien').childNodes[i]);
-//         i++;
-//     }
+    // while (document.getElementById('tblNhanVien').hasChildNodes()) {
+    //     let i = 0;
+    //     document.getElementById('tblNhanVien').removeChild(document.getElementById('tblNhanVien').childNodes[i]);
+    //     i++;
+    // }
 //     danhSachNhanVien.forEach((employer, index) => {
 //         employer = JSON.parse(employer);
 
